@@ -1,0 +1,28 @@
+C:\mysteap\work_office\Eland\SalseDailyReport\ELANAutomationVS2010\ElandAutomaion\clsdatabaseinfo\bin\Debug\clsdatabaseinfo.dll
+C:\mysteap\work_office\Eland\SalseDailyReport\ELANAutomationVS2010\ElandAutomaion\clsdatabaseinfo\bin\Debug\clsdatabaseinfo.pdb
+C:\mysteap\work_office\Eland\SalseDailyReport\ELANAutomationVS2010\ElandAutomaion\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.dll
+C:\mysteap\work_office\Eland\SalseDailyReport\ELANAutomationVS2010\ElandAutomaion\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.pdb
+C:\mysteap\work_office\Eland\SalseDailyReport\copy\New folder (3)\ELANAutomationVS2010\ElandAutomaion\clsdatabaseinfo\bin\Debug\clsdatabaseinfo.dll
+C:\mysteap\work_office\Eland\SalseDailyReport\copy\New folder (3)\ELANAutomationVS2010\ElandAutomaion\clsdatabaseinfo\bin\Debug\clsdatabaseinfo.pdb
+C:\mysteap\work_office\Eland\SalseDailyReport\copy\New folder (3)\ELANAutomationVS2010\ElandAutomaion\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.dll
+C:\mysteap\work_office\Eland\SalseDailyReport\copy\New folder (3)\ELANAutomationVS2010\ElandAutomaion\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.pdb
+C:\mysteap\work_office\Eland\AP\ELANAutomationVS2012fromwork3.5\ElandAutomaion\clsdatabaseinfo\bin\Debug\clsdatabaseinfo.dll
+C:\mysteap\work_office\Eland\AP\ELANAutomationVS2012fromwork3.5\ElandAutomaion\clsdatabaseinfo\bin\Debug\clsdatabaseinfo.pdb
+C:\mysteap\work_office\Eland\AP\ELANAutomationVS2012fromwork3.5\ElandAutomaion\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.dll
+C:\mysteap\work_office\Eland\AP\ELANAutomationVS2012fromwork3.5\ElandAutomaion\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.pdb
+C:\mysteap\work_office\Eland\AP\ELANAutomationVS2012fromwork3.5\ElandAutomaion\clsdatabaseinfo\bin\Debug\clsdatabaseinfo.dll.config
+C:\mysteap\work_office\Eland\AP\ELANAutomationVS2012fromwork3.5\ElandAutomaion\clsdatabaseinfo\bin\Debug\System.Data.SQLite.dll
+C:\mysteap\work_office\Eland\AP\ELANAutomationVS2012fromwork3.5\ElandAutomaion\clsdatabaseinfo\bin\Debug\System.Data.SQLite.Linq.dll
+C:\mysteap\work_office\Eland\AP\ELANAutomationVS2012fromwork3.5\ElandAutomaion\clsdatabaseinfo\bin\Debug\System.Data.SQLite.xml
+C:\mysteap\work_office\Eland\AP\ELANAutomationVS2012fromwork3.5\ElandAutomaion\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.csprojResolveAssemblyReference.cache
+D:\Dev Project\mysteap\work_office\ElandAutomaion\clsdatabaseinfo\bin\Debug\clsdatabaseinfo.dll.config
+D:\Dev Project\mysteap\work_office\ElandAutomaion\clsdatabaseinfo\bin\Debug\clsdatabaseinfo.dll
+D:\Dev Project\mysteap\work_office\ElandAutomaion\clsdatabaseinfo\bin\Debug\clsdatabaseinfo.pdb
+D:\Dev Project\mysteap\work_office\ElandAutomaion\clsdatabaseinfo\bin\Debug\System.Data.SQLite.dll
+D:\Dev Project\mysteap\work_office\ElandAutomaion\clsdatabaseinfo\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Dev Project\mysteap\work_office\ElandAutomaion\clsdatabaseinfo\bin\Debug\System.Data.SQLite.xml
+D:\Dev Project\mysteap\work_office\ElandAutomaion\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.csprojResolveAssemblyReference.cache
+D:\Dev Project\mysteap\work_office\ElandAutomaion\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.dll
+D:\Dev Project\mysteap\work_office\ElandAutomaion\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.pdb
+C:\Test\测试功能专用\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.dll
+C:\Test\测试功能专用\clsdatabaseinfo\obj\Debug\clsdatabaseinfo.pdb

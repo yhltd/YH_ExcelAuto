@@ -1,0 +1,9 @@
+C:\Test\测试功能专用\clsBuiness\bin\Debug\clsBuiness.dll
+C:\Test\测试功能专用\clsBuiness\bin\Debug\clsBuiness.pdb
+C:\Test\测试功能专用\clsBuiness\bin\Debug\dblist.dll
+C:\Test\测试功能专用\clsBuiness\bin\Debug\newclscommon.dll
+C:\Test\测试功能专用\clsBuiness\bin\Debug\dblist.pdb
+C:\Test\测试功能专用\clsBuiness\bin\Debug\newclscommon.pdb
+C:\Test\测试功能专用\clsBuiness\obj\Debug\clsBuiness.csprojResolveAssemblyReference.cache
+C:\Test\测试功能专用\clsBuiness\obj\Debug\clsBuiness.dll
+C:\Test\测试功能专用\clsBuiness\obj\Debug\clsBuiness.pdb

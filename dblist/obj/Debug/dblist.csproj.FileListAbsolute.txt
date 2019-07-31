@@ -1,0 +1,5 @@
+C:\Test\测试功能专用\dblist\bin\Debug\dblist.dll
+C:\Test\测试功能专用\dblist\bin\Debug\dblist.pdb
+C:\Test\测试功能专用\dblist\obj\Debug\dblist.dll
+C:\Test\测试功能专用\dblist\obj\Debug\dblist.pdb
+C:\Test\测试功能专用\dblist\obj\Debug\dblist.csprojResolveAssemblyReference.cache

@@ -1,0 +1,9 @@
+C:\Test\测试功能专用\catch_mess_spy++\obj\Debug\catch_mess_spy++.csprojResolveAssemblyReference.cache
+C:\Test\测试功能专用\catch_mess_spy++\obj\Debug\catch_mess_spy__.Form1.resources
+C:\Test\测试功能专用\catch_mess_spy++\obj\Debug\catch_mess_spy__.Properties.Resources.resources
+C:\Test\测试功能专用\catch_mess_spy++\obj\Debug\catch_mess_spy++.csproj.GenerateResource.Cache
+C:\Test\测试功能专用\catch_mess_spy++\bin\Debug\catch_mess_spy++.exe.config
+C:\Test\测试功能专用\catch_mess_spy++\bin\Debug\catch_mess_spy++.exe
+C:\Test\测试功能专用\catch_mess_spy++\bin\Debug\catch_mess_spy++.pdb
+C:\Test\测试功能专用\catch_mess_spy++\obj\Debug\catch_mess_spy++.exe
+C:\Test\测试功能专用\catch_mess_spy++\obj\Debug\catch_mess_spy++.pdb

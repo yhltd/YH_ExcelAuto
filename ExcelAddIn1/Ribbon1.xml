@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabAddIns">
+        <group id="MyGroup"
+               label="主页">
+          <button
+          id="rxbtn1"
+          imageMso="Italic"
+
+          label="Large size button"
+
+          size="large"
+
+          onAction="rxbtn1_Click"/>
+
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
