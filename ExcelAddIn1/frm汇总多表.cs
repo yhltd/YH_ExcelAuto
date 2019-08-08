@@ -23,7 +23,7 @@ namespace ExcelAddIn1
         // 后台执行控件
         private BackgroundWorker bgWorker;
         // 消息显示窗体
-        private frmMessageShow frmMessageShow;
+        private bakfrmMessageShow frmMessageShow;
         // 后台操作是否正常完成
         private bool blnBackGroundWorkIsOK = false;
         //后加的后台属性显
@@ -162,7 +162,7 @@ namespace ExcelAddIn1
 
                 bgWorker.RunWorkerAsync();
                 // 启动消息显示画面
-                frmMessageShow = new frmMessageShow(clsShowMessage.MSG_001,
+                frmMessageShow = new bakfrmMessageShow(clsShowMessage.MSG_001,
                                                     clsShowMessage.MSG_007,
                                                     clsConstant.Dialog_Status_Disable);
                 frmMessageShow.ShowDialog();

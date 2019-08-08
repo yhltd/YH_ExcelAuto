@@ -7,3 +7,13 @@ C:\Test\测试功能专用\clsBuiness\bin\Debug\newclscommon.pdb
 C:\Test\测试功能专用\clsBuiness\obj\Debug\clsBuiness.csprojResolveAssemblyReference.cache
 C:\Test\测试功能专用\clsBuiness\obj\Debug\clsBuiness.dll
 C:\Test\测试功能专用\clsBuiness\obj\Debug\clsBuiness.pdb
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\clsBuiness.dll
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\clsBuiness.pdb
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\dblist.dll
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\newclscommon.dll
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\dblist.pdb
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\newclscommon.pdb
+D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.csprojResolveAssemblyReference.cache
+D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.dll
+D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.pdb
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\MySql.Data.dll

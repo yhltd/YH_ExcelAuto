@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -44,12 +43,10 @@ namespace ExcelAddIn1
             if (status == 0)
             {
                 this.btnOK.Enabled = true;
-                button1.Visible = false;
             }
             else if (status == 1)
             {
                 this.btnOK.Enabled = false;
-                button1.Visible = true;
             }
         }
 
@@ -69,39 +66,6 @@ namespace ExcelAddIn1
                 e.Cancel = true;
             }
         }
-
-        private void frmMessageShow_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Process[] pro = Process.GetProcesses();//获取已开启的所有进程
-            for (int i = 0; i < pro.Length; i++)
-            {
-                if (pro[i].ProcessName.ToString().Contains("Eland PRC"))
-                {
-                    pro[i].Kill();//结束进程
-                }
-                if (pro[i].ProcessName.ToString().Contains("gobackhome1513"))
-                {
-                    pro[i].Kill();//结束进程
-                }
-            }
-            //Application.Exit();
-            System.Environment.Exit(0);
-        }
-
-        private void frmMessageShow_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-            {
-                button1_Click(this, EventArgs.Empty);
-            }
-          
-        }
-
 
 
     }

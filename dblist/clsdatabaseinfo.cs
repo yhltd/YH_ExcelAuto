@@ -609,4 +609,21 @@ namespace dblist
         public string mark5 { get; set; }
 
     }
+    public class clsSendmailinfo
+    {
+        public string _id { get; set; }
+
+        public string sendfrom { get; set; }
+        public string sendto { get; set; }
+        public string subject { get; set; }
+        public string bodyinfo { get; set; }
+        public string acc { get; set; }
+
+        public string msg_tel { get; set; }
+
+        public string host { get; set; }
+        public string password { get; set; }
+
+    
+    }
 }

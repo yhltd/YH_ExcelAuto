@@ -186,11 +186,23 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="frmAlterinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterinfo.Designer.cs">
+      <DependentUpon>frmAlterinfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bakfrmMessageShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bakfrmMessageShow.Designer.cs">
+      <DependentUpon>bakfrmMessageShow.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMessageShow.cs">
       <SubType>Form</SubType>
@@ -210,11 +222,23 @@
     <Compile Include="frm汇总多表.Designer.cs">
       <DependentUpon>frm汇总多表.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="frmAlterinfo.resx">
+      <DependentUpon>frmAlterinfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bakfrmMessageShow.resx">
+      <DependentUpon>bakfrmMessageShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMessageShow.resx">
       <DependentUpon>frmMessageShow.cs</DependentUpon>
@@ -224,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm汇总多表.resx">
       <DependentUpon>frm汇总多表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

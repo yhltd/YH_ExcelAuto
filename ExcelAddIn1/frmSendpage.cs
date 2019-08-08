@@ -22,7 +22,7 @@ namespace ExcelAddIn1
         // 后台执行控件
         private BackgroundWorker bgWorker;
         // 消息显示窗体
-        private frmMessageShow frmMessageShow;
+        private bakfrmMessageShow frmMessageShow;
         // 后台操作是否正常完成
         private bool blnBackGroundWorkIsOK = false;
         //后加的后台属性显
@@ -55,8 +55,8 @@ namespace ExcelAddIn1
             //SendMail163();
 
 
-
-            SendMail_Allport(toolStripTextBox1.Text, toolStripTextBox2.Text, toolStripTextBox3.Text, textBox1.Text, textBox3.Text, textBox4.Text, null);
+            clsAllnew BusinessHelp = new clsAllnew();
+            BusinessHelp.SendMail_Allport(toolStripTextBox1.Text, toolStripTextBox2.Text, toolStripTextBox3.Text, textBox1.Text, textBox3.Text, textBox4.Text, null);
 
             MessageBox.Show("发送完毕！");
 
@@ -72,7 +72,7 @@ namespace ExcelAddIn1
                 bgWorker.RunWorkerAsync();
 
                 // 启动消息显示画面
-                frmMessageShow = new frmMessageShow(clsShowMessage.MSG_001,
+                frmMessageShow = new bakfrmMessageShow(clsShowMessage.MSG_001,
                                                     clsShowMessage.MSG_007,
                                                     clsConstant.Dialog_Status_Disable);
                 frmMessageShow.ShowDialog();
@@ -328,44 +328,7 @@ namespace ExcelAddIn1
                 }
             }
         }
-        public void SendMail_Allport(string Hosti, string fromi, string passkey, string toi, string Subjecti, string Bodyi, List<string> Attachmentlist)
-        {
-
-            {
-                System.Net.Mail.SmtpClient client = new System.Net.Mail.SmtpClient();
-                client.Host = Hosti;// "smtp.126.com";
-                client.UseDefaultCredentials = false;
-                //
-                //启用功能修改处
-                //
-                client.Credentials = new System.Net.NetworkCredential(fromi, passkey);
-                client.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
-                client.Port = 25;
-                client.EnableSsl = true;//经过ssl加密    
-                //
-                //启用功能修改处
-                //
-                System.Net.Mail.MailMessage message = new System.Net.Mail.MailMessage(fromi, toi);
-                message.Subject = Subjecti;
-                message.Body = Bodyi;
-                message.BodyEncoding = System.Text.Encoding.UTF8;
-                message.IsBodyHtml = true;
-                //  message.Headers.Add("X-Mailer", "Microsoft Outlook");
-
-                //添加附件需将(附件先上传到服务器)
-                // System.Net.Mail.Attachment data = new System.Net.Mail.Attachment(@"UpFile\fj.rar",System.Net.Mime.MediaTypeNames.Application.Octet);
-                //message.Attachments.Add(data);
-                try
-                {
-                    client.Send(message);
-                    //  this.lbMessage.Text = "登录名和密码已经发送到您的" + "512250428@qq.com" + "邮箱!";
-                }
-                catch (Exception ex)
-                {
-                    // this.lbMessage.Text = "Send Email Failed." + ex.ToString();
-                }
-            }
-        }
+   
 
         private string moveFolder(string fajianren, string newfajianren)
         {

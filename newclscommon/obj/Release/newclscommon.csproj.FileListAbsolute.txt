@@ -1,0 +1,7 @@
+D:\Devlop\YH_ExcelAuto\newclscommon\bin\Release\newclscommon.dll
+D:\Devlop\YH_ExcelAuto\newclscommon\bin\Release\newclscommon.pdb
+D:\Devlop\YH_ExcelAuto\newclscommon\bin\Release\dblist.dll
+D:\Devlop\YH_ExcelAuto\newclscommon\bin\Release\dblist.pdb
+D:\Devlop\YH_ExcelAuto\newclscommon\obj\Release\newclscommon.csprojResolveAssemblyReference.cache
+D:\Devlop\YH_ExcelAuto\newclscommon\obj\Release\newclscommon.dll
+D:\Devlop\YH_ExcelAuto\newclscommon\obj\Release\newclscommon.pdb

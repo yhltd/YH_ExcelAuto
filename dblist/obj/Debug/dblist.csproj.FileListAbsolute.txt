@@ -3,3 +3,7 @@ C:\Test\测试功能专用\dblist\bin\Debug\dblist.pdb
 C:\Test\测试功能专用\dblist\obj\Debug\dblist.dll
 C:\Test\测试功能专用\dblist\obj\Debug\dblist.pdb
 C:\Test\测试功能专用\dblist\obj\Debug\dblist.csprojResolveAssemblyReference.cache
+D:\Devlop\YH_ExcelAuto\dblist\bin\Debug\dblist.dll
+D:\Devlop\YH_ExcelAuto\dblist\bin\Debug\dblist.pdb
+D:\Devlop\YH_ExcelAuto\dblist\obj\Debug\dblist.dll
+D:\Devlop\YH_ExcelAuto\dblist\obj\Debug\dblist.pdb

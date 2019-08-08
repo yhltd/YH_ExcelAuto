@@ -180,7 +180,47 @@ namespace clsBuiness
                     #endregion
         }
 
+        public void SendMail_Allport(string Hosti, string fromi, string passkey, string toi, string Subjecti, string Bodyi, string[] Attachmentlist)
+        {
 
+            {
+                System.Net.Mail.SmtpClient client = new System.Net.Mail.SmtpClient();
+                client.Host = Hosti;// "smtp.126.com";
+                client.UseDefaultCredentials = false;
+                //
+                //启用功能修改处
+                //
+                client.Credentials = new System.Net.NetworkCredential(fromi, passkey);
+                client.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
+                client.Port = 25;
+                client.EnableSsl = true;//经过ssl加密    
+                //
+                //启用功能修改处
+                //
+                System.Net.Mail.MailMessage message = new System.Net.Mail.MailMessage(fromi, toi);
+                message.Subject = Subjecti;
+                message.Body = Bodyi;
+                message.BodyEncoding = System.Text.Encoding.UTF8;
+                message.IsBodyHtml = true;
+                //  message.Headers.Add("X-Mailer", "Microsoft Outlook");
+
+                //添加附件需将(附件先上传到服务器)
+                for (int i = 0; i < Attachmentlist.Length; i++)
+                {
+                    System.Net.Mail.Attachment data = new System.Net.Mail.Attachment(Attachmentlist[i], System.Net.Mime.MediaTypeNames.Application.Octet);
+                    message.Attachments.Add(data);
+                }
+                try
+                {
+                    client.Send(message);
+                    //  this.lbMessage.Text = "登录名和密码已经发送到您的" + "512250428@qq.com" + "邮箱!";
+                }
+                catch (Exception ex)
+                {
+                    // this.lbMessage.Text = "Send Email Failed." + ex.ToString();
+                }
+            }
+        }
 
     }
 }

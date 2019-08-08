@@ -39,7 +39,7 @@ namespace ExcelAddIn1
 
         public Ribbon1()
         {
-       
+
         }
 
         #region IRibbonExtensibility 成员
@@ -97,10 +97,10 @@ namespace ExcelAddIn1
             if (frmMain == null)
             {
                 frmMain = new frmMain();
-
             }
-          
+
             frmMain.Show();
+
         }
         void FrmOMS_FormClosed(object sender, FormClosedEventArgs e)
         {

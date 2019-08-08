@@ -5,3 +5,10 @@ C:\Test\测试功能专用\newclscommon\obj\Debug\newclscommon.dll
 C:\Test\测试功能专用\newclscommon\obj\Debug\newclscommon.pdb
 C:\Test\测试功能专用\newclscommon\bin\Debug\dblist.dll
 C:\Test\测试功能专用\newclscommon\bin\Debug\dblist.pdb
+D:\Devlop\YH_ExcelAuto\newclscommon\bin\Debug\newclscommon.dll
+D:\Devlop\YH_ExcelAuto\newclscommon\bin\Debug\newclscommon.pdb
+D:\Devlop\YH_ExcelAuto\newclscommon\bin\Debug\dblist.dll
+D:\Devlop\YH_ExcelAuto\newclscommon\bin\Debug\dblist.pdb
+D:\Devlop\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.csprojResolveAssemblyReference.cache
+D:\Devlop\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.dll
+D:\Devlop\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.pdb

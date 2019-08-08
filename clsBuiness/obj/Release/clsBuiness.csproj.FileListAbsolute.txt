@@ -1,0 +1,9 @@
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Release\clsBuiness.dll
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Release\clsBuiness.pdb
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Release\dblist.dll
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Release\newclscommon.dll
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Release\dblist.pdb
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Release\newclscommon.pdb
+D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.csprojResolveAssemblyReference.cache
+D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.dll
+D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.pdb
