@@ -24,3 +24,6 @@ D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.Properties.Resources.
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.csproj.GenerateResource.Cache
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.dll
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.pdb
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\MySql.Data.dll
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.frmAlterinfo.resources
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.Login.resources

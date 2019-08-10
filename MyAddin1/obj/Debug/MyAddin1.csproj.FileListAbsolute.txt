@@ -1,0 +1,7 @@
+D:\Devlop\YH_ExcelAuto\MyAddin1\bin\Debug\MyAddin1.dll
+D:\Devlop\YH_ExcelAuto\MyAddin1\bin\Debug\MyAddin1.pdb
+D:\Devlop\YH_ExcelAuto\MyAddin1\bin\Debug\MyAddin1.xml
+D:\Devlop\YH_ExcelAuto\MyAddin1\obj\Debug\MyAddin1.csprojResolveAssemblyReference.cache
+D:\Devlop\YH_ExcelAuto\MyAddin1\obj\Debug\MyAddin1.csproj.ResolveComReference.cache
+D:\Devlop\YH_ExcelAuto\MyAddin1\obj\Debug\MyAddin1.dll
+D:\Devlop\YH_ExcelAuto\MyAddin1\obj\Debug\MyAddin1.pdb

@@ -255,19 +255,21 @@ namespace ExcelAddIn1
             clsAllnew BusinessHelp = new clsAllnew();
             int index = 1;
 
+            toolStripLabel2.Text = "正在发送  :   " + index.ToString() + "/" + MAPPINGResult.Count.ToString();
+
             foreach (clsSendmailinfo item in MAPPINGResult)
             {
 
                 //bgWorker.ReportProgress(0, "已发送  :  " + index.ToString() + "/" + MAPPINGResult.ToString());
 
-                toolStripLabel2.Text = "已发送邮件  :   " + index.ToString() + "/" + MAPPINGResult.Count.ToString();
+                toolStripLabel2.Text = "正在发送  :   " + index.ToString() + "/" + MAPPINGResult.Count.ToString();
 
 
                 string[] fileText = System.Text.RegularExpressions.Regex.Split(item.acc, ",");
                 BusinessHelp.SendMail_Allport(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText);
                 index++;
             }
-            MessageBox.Show("运行结束，已发送邮件：  " + index.ToString());
+            MessageBox.Show("运行结束，已发送邮件：  " + (index-1).ToString());
 
 
             return;
