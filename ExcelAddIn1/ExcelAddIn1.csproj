@@ -271,6 +271,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Ribbon1.cs" />
+    <Compile Include="Ribbon3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ribbon3.Designer.cs">
+      <DependentUpon>Ribbon3.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
     </Compile>

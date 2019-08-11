@@ -7,6 +7,7 @@ D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\dblist.dll
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\newclscommon.dll
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\RibbonControlsLibrary.dll
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\MySql.Data.dll
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\Microsoft.Windows.Shell.dll
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\clsBuiness.pdb
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\dblist.pdb
@@ -15,15 +16,14 @@ D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\Microsoft.Office.Tools.Common.v4.
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\Microsoft.Windows.Shell.pdb
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\Microsoft.Windows.Shell.xml
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.csprojResolveAssemblyReference.cache
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.frmAlterinfo.resources
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.frmMain.resources
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.bakfrmMessageShow.resources
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.frmMessageShow.resources
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.frmSendpage.resources
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.frm汇总多表.resources
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.Login.resources
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.Properties.Resources.resources
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.csproj.GenerateResource.Cache
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.dll
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.pdb
-D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\MySql.Data.dll
-D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.frmAlterinfo.resources
-D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.Login.resources

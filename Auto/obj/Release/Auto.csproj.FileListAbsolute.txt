@@ -1,0 +1,15 @@
+D:\Devlop\YH_ExcelAuto\Auto\bin\Release\Auto.exe.config
+D:\Devlop\YH_ExcelAuto\Auto\bin\Release\Auto.exe
+D:\Devlop\YH_ExcelAuto\Auto\bin\Release\Auto.pdb
+D:\Devlop\YH_ExcelAuto\Auto\bin\Release\dblist.dll
+D:\Devlop\YH_ExcelAuto\Auto\bin\Release\newclscommon.dll
+D:\Devlop\YH_ExcelAuto\Auto\bin\Release\MySql.Data.dll
+D:\Devlop\YH_ExcelAuto\Auto\bin\Release\dblist.pdb
+D:\Devlop\YH_ExcelAuto\Auto\bin\Release\newclscommon.pdb
+D:\Devlop\YH_ExcelAuto\Auto\obj\Release\Auto.csprojResolveAssemblyReference.cache
+D:\Devlop\YH_ExcelAuto\Auto\obj\Release\Auto.Form1.resources
+D:\Devlop\YH_ExcelAuto\Auto\obj\Release\Auto.frmTB小青龙1028.resources
+D:\Devlop\YH_ExcelAuto\Auto\obj\Release\Auto.Properties.Resources.resources
+D:\Devlop\YH_ExcelAuto\Auto\obj\Release\Auto.csproj.GenerateResource.Cache
+D:\Devlop\YH_ExcelAuto\Auto\obj\Release\Auto.exe
+D:\Devlop\YH_ExcelAuto\Auto\obj\Release\Auto.pdb
