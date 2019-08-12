@@ -27,3 +27,7 @@ D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.Properties.Resources.
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.csproj.GenerateResource.Cache
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.dll
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.pdb
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\Spire.License.dll
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\Spire.Doc.dll
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\Spire.Pdf.dll
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Release\Spire.Pdf.xml

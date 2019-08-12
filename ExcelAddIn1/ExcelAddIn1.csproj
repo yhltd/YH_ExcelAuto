@@ -139,6 +139,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\dll\RibbonControlsLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Spire.License, Version=1.3.5.35, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\dll\Spire.Pdf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />

@@ -2,6 +2,7 @@
 using clsCommon;
 using dblist;
 using newclscommon;
+using Spire.Pdf;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +12,8 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+ 
+using System.Drawing.Imaging;
 
 namespace ExcelAddIn1
 {
@@ -19,7 +22,7 @@ namespace ExcelAddIn1
         // 后台执行控件
         private BackgroundWorker bgWorker;
         // 消息显示窗体
-        private bakfrmMessageShow frmMessageShow;
+        private frmMessageShow frmMessageShow;
         // 后台操作是否正常完成
         private bool blnBackGroundWorkIsOK = false;
         //后加的后台属性显
@@ -269,7 +272,7 @@ namespace ExcelAddIn1
                 BusinessHelp.SendMail_Allport(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText);
                 index++;
             }
-            MessageBox.Show("运行结束，已发送邮件：  " + (index-1).ToString());
+            MessageBox.Show("运行结束，已发送邮件：  " + (index - 1).ToString());
 
 
             return;
@@ -286,7 +289,7 @@ namespace ExcelAddIn1
                 bgWorker.RunWorkerAsync();
 
                 // 启动消息显示画面
-                frmMessageShow = new bakfrmMessageShow(clsShowMessage.MSG_001,
+                frmMessageShow = new frmMessageShow(clsShowMessage.MSG_001,
                                                     clsShowMessage.MSG_007,
                                                     clsConstant.Dialog_Status_Disable);
                 frmMessageShow.ShowDialog();
@@ -376,6 +379,204 @@ namespace ExcelAddIn1
                     frmMessageShow.setStatus(clsConstant.Dialog_Status_Enable);
                 }
             }
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            selectPDF();
+
+
+        }
+
+        private void selectPDF()
+        {
+            OpenFileDialog tbox = new OpenFileDialog();
+            tbox.Multiselect = false;
+            tbox.Filter = "PDF Files(*.PDF,*.PDF,*.PDF,*.PDF)|*.PDF;*.PDF;*.PDF;*.PDF";
+            if (tbox.ShowDialog() == DialogResult.OK)
+            {
+                Copyfile = tbox.FileName;
+            }
+
+            MessageBox.Show("导入成功，请点击开始转换  ");
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            toolStripLabel1.Text = "转换期间比较漫长请耐心等待.....";
+
+            Thread t = new Thread(converpdf);
+            t.Start();//线程开始执行
+
+
+            //Thread.Sleep(TimeSpan.FromSeconds(2));
+            //t.Abort();
+
+            return;
+
+            try
+            {
+
+                InitialBackGroundWorker();
+                bgWorker.DoWork += new DoWorkEventHandler(cover_pdftoword);
+
+                bgWorker.RunWorkerAsync();
+
+                // 启动消息显示画面
+                frmMessageShow = new frmMessageShow(clsShowMessage.MSG_001,
+                                                    clsShowMessage.MSG_007,
+                                                    clsConstant.Dialog_Status_Disable);
+                frmMessageShow.ShowDialog();
+
+                // 数据读取成功后在画面显示
+                if (blnBackGroundWorkIsOK)
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return;
+                throw ex;
+
+
+
+            }
+
+
+        }
+        private void cover_pdftoword(object sender, DoWorkEventArgs e)
+        {
+
+
+            DateTime oldDate = DateTime.Now;
+
+
+            converpdf();
+
+
+
+            DateTime FinishTime = DateTime.Now;
+            TimeSpan s = DateTime.Now - oldDate;
+            string timei = s.Minutes.ToString() + ":" + s.Seconds.ToString();
+            string Showtime = clsShowMessage.MSG_029 + timei.ToString();
+            bgWorker.ReportProgress(clsConstant.Thread_Progress_OK, clsShowMessage.MSG_009 + "\r\n" + Showtime);
+
+        }
+
+        private void converpdf()
+        {
+            string strDesktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+            string filename = strDesktopPath + "\\Export PDF " + DateTime.Now.ToString("yyyyMMdd-ss") + ".doc";
+
+            #region Pdf转word
+            PdfDocument doc = new PdfDocument();
+            doc.LoadFromFile(Copyfile);
+            doc.SaveToFile(filename, Spire.Pdf.FileFormat.DOC);
+
+            toolStripLabel1.Text = "生成完成-" + filename;
+
+            #endregion
+        }
+     
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog tbox = new OpenFileDialog();
+            tbox.Multiselect = false;
+            tbox.Filter = "PDF Files(*.doc,*.docx,*.DOC,*.DOCX)|*.doc;*.docx;*.DOC;*.DOCX";
+            if (tbox.ShowDialog() == DialogResult.OK)
+            {
+                Copyfile = tbox.FileName;
+            }
+
+            MessageBox.Show("导入成功，请点击开始转换  ");
+
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            
+            string strDesktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+            string filename = strDesktopPath + "\\Export image " + DateTime.Now.ToString("yyyyMMdd-ss") + ".jpg";
+            clsAllnew bu = new clsAllnew();
+
+
+            bu.WordToJPGBySpire(Copyfile, filename);
+
+
+        }
+
+        private void 导入数据模板ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            selectPDF();
+
+        }
+
+        private void 开始转换ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                labshow();
+
+                Thread t = new Thread(pdf_jpg);
+                t.Start();//线程开始执行
+
+ 
+                return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+             
+                throw;
+            }
+        }
+
+        private void pdf_jpg()
+        {
+            string strDesktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+            string filename = strDesktopPath + "\\pic\\Export image " + DateTime.Now.ToString("yyyyMMdd-ss") + "";
+
+
+            string subPath = strDesktopPath + "/pic/";
+            if (false == System.IO.Directory.Exists(subPath))
+            {
+                //创建pic文件夹
+                System.IO.Directory.CreateDirectory(subPath);
+            }
+
+            //初始化PdfDocument实例
+            PdfDocument doc = new PdfDocument();
+
+            //加载PDF文档
+            doc.LoadFromFile(Copyfile);
+
+            //遍历PDF每一页
+            for (int i = 0; i < doc.Pages.Count; i++)
+            {
+                //将PDF页转换成bitmap图形
+                System.Drawing.Image bmp = doc.SaveAsImage(i);
+
+                //将bitmap图形保存为png图片
+                string fileName = string.Format("Page-{0}.png", i + 1);
+                toolStripLabel1.Text = "生成:" + (i + 1) + "/" + doc.Pages.Count;
+
+                bmp.Save(filename + fileName, System.Drawing.Imaging.ImageFormat.Png);
+            }
+
+            toolStripLabel1.Text = "生成完成-" + subPath;
+        }
+
+        private void labshow()
+        {
+            toolStripLabel1.Text = "转换期间比较漫长请耐心等待.....";
         }
 
     }

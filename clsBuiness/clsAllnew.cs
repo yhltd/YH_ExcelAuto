@@ -1,8 +1,12 @@
 ﻿using clsCommon;
 using dblist;
+using Spire.Doc;
+using Spire.Doc.Documents;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -116,7 +120,7 @@ namespace clsBuiness
                     ExcelApp.DisplayAlerts = false;
                     for (int i = 0; i < Alist.Count; i++)
                     {
-                   
+
                         Microsoft.Office.Interop.Excel._Workbook ExcelBook2 =
                                  ExcelApp.Workbooks.Open(Alist[i], missingValue, missingValue, missingValue, missingValue, missingValue, missingValue, missingValue, missingValue, missingValue, missingValue, missingValue, missingValue, missingValue, missingValue);
 
@@ -126,7 +130,7 @@ namespace clsBuiness
                         r.Copy(missingValue);
 
                         int lineinex2 = ExcelSheet2.UsedRange.Rows.Count;
-                    
+
 
                         Excel.Range r2 = ExcelSheet.Range[ExcelSheet.Cells[lineinex, 1], ExcelSheet.Cells[lineinex, 135]];
                         r2.PasteSpecial(Microsoft.Office.Interop.Excel.XlPasteType.xlPasteValues);
@@ -138,7 +142,7 @@ namespace clsBuiness
                     }
                     ExcelBook.RefreshAll();
                     #region 写入文件
-                    sfdDownFile.FileName = Path.Combine(DesktopPath,"合并-" + " " + DateTime.Now.ToString("yyyyMMdd-ss"));
+                    sfdDownFile.FileName = Path.Combine(DesktopPath, "合并-" + " " + DateTime.Now.ToString("yyyyMMdd-ss"));
                     strExcelFileName = sfdDownFile.FileName + ".xls";
 
 
@@ -221,6 +225,12 @@ namespace clsBuiness
                 }
             }
         }
-
+        public void WordToJPGBySpire(string wordFile, string jpgFile)
+        {
+            Document document = new Document();
+            document.LoadFromFile(wordFile);
+            Image img = document.SaveToImages(0, ImageType.Metafile);
+            img.Save(jpgFile, ImageFormat.Jpeg);
+        }
     }
 }

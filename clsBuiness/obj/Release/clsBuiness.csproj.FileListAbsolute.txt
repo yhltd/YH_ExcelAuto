@@ -8,3 +8,5 @@ D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Release\newclscommon.pdb
 D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.csprojResolveAssemblyReference.cache
 D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.dll
 D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.pdb
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Release\Spire.Doc.dll
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Release\Spire.License.dll

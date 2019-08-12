@@ -339,17 +339,19 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>Component</td><td>{F1C2EECE-DA81-46E1-B3BD-F1B3EF56B189}</td><td>INSTALLDIR</td><td>2</td><td/><td>File</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ExcelAddIn1.dll</td><td>{221179F6-F746-4445-92CE-769B6DA381C6}</td><td>INSTALLDIR</td><td>2</td><td/><td>exceladdin1.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Component</td><td>{0C5B552E-023B-4AF4-9C07-326568FDC955}</td><td>INSTALLDIR</td><td>2</td><td/><td>File</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ExcelAddIn1.dll</td><td>{DA3A7B89-FF6A-4752-90F2-FF1CE3C55C80}</td><td>INSTALLDIR</td><td>2</td><td/><td>exceladdin1.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{125C4A0E-6140-4F14-BBA7-BB7DACD4490B}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{2829F9EA-C245-481A-92E1-66E39697DF87}</td><td>INSTALLDIR</td><td>258</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td>{A0A6CDE1-D963-448F-9C61-B8CBF218E002}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.commo</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Microsoft.Windows.Shell.dll</td><td>{E94FC56C-F13C-4C49-957B-9DA870E7132D}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.windows.shell.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>MySql.Data.dll</td><td>{5C753F17-3098-4B0E-81C1-57BE4762CCF4}</td><td>INSTALLDIR</td><td>2</td><td/><td>mysql.data.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>RibbonControlsLibrary.dll</td><td>{15CE27B7-82D3-4835-A971-11EA0BCBDC52}</td><td>INSTALLDIR</td><td>2</td><td/><td>ribboncontrolslibrary.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>clsBuiness.dll</td><td>{DF2AFBF1-1C4B-4814-A23D-0C9254C81C53}</td><td>INSTALLDIR</td><td>2</td><td/><td>clsbuiness.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>dblist.dll</td><td>{FFB2E439-2D2E-4C47-BA53-5FC3E159602D}</td><td>INSTALLDIR</td><td>2</td><td/><td>dblist.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>newclscommon.dll</td><td>{90DC9249-2C4B-4394-87DD-B892132B1997}</td><td>INSTALLDIR</td><td>2</td><td/><td>newclscommon.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td>{B872BBA2-076E-4AE6-A8E2-1031E3ED7B61}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.commo</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.Windows.Shell.dll</td><td>{BFE5FABC-0DE8-4DCF-BC55-EDB088ACDBD7}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.windows.shell.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>MySql.Data.dll</td><td>{50320B73-40D4-4599-BB69-A3E51CE7C35B}</td><td>INSTALLDIR</td><td>2</td><td/><td>mysql.data.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>RibbonControlsLibrary.dll</td><td>{63EC09AF-B7A1-4C33-BF9A-F934314A1ACA}</td><td>INSTALLDIR</td><td>2</td><td/><td>ribboncontrolslibrary.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Spire.License.dll</td><td>{A863DD31-0DA1-4378-A3C6-25E25CA47545}</td><td>INSTALLDIR</td><td>2</td><td/><td>spire.license.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Spire.Pdf.dll</td><td>{78D1A6ED-22D4-4FDF-9BD0-45EA0AB0492E}</td><td>INSTALLDIR</td><td>2</td><td/><td>spire.pdf.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>clsBuiness.dll</td><td>{71AFA679-4E2F-4540-8BE2-BC4BBDD2E6D3}</td><td>INSTALLDIR</td><td>2</td><td/><td>clsbuiness.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>dblist.dll</td><td>{42C74E91-E2BF-424F-9546-87DCE98C3671}</td><td>INSTALLDIR</td><td>2</td><td/><td>dblist.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>newclscommon.dll</td><td>{173BB6BD-DD8B-436A-A70B-5CE6A83F3D08}</td><td>INSTALLDIR</td><td>2</td><td/><td>newclscommon.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1066,6 +1068,8 @@
 		<row><td>INSTALLDIR</td><td>Microsoft.Windows.Shell.dll</td></row>
 		<row><td>INSTALLDIR</td><td>MySql.Data.dll</td></row>
 		<row><td>INSTALLDIR</td><td>RibbonControlsLibrary.dll</td></row>
+		<row><td>INSTALLDIR</td><td>Spire.License.dll</td></row>
+		<row><td>INSTALLDIR</td><td>Spire.Pdf.dll</td></row>
 		<row><td>INSTALLDIR</td><td>clsBuiness.dll</td></row>
 		<row><td>INSTALLDIR</td><td>dblist.dll</td></row>
 		<row><td>INSTALLDIR</td><td>newclscommon.dll</td></row>
@@ -1888,6 +1892,8 @@
 		<row><td>AlwaysInstall</td><td>Microsoft.Windows.Shell.dll</td></row>
 		<row><td>AlwaysInstall</td><td>MySql.Data.dll</td></row>
 		<row><td>AlwaysInstall</td><td>RibbonControlsLibrary.dll</td></row>
+		<row><td>AlwaysInstall</td><td>Spire.License.dll</td></row>
+		<row><td>AlwaysInstall</td><td>Spire.Pdf.dll</td></row>
 		<row><td>AlwaysInstall</td><td>clsBuiness.dll</td></row>
 		<row><td>AlwaysInstall</td><td>dblist.dll</td></row>
 		<row><td>AlwaysInstall</td><td>newclscommon.dll</td></row>
@@ -1923,6 +1929,9 @@
 		<row><td>newclscommon.dll</td><td>newclscommon.dll</td><td>NEWCLS~1.DLL|newclscommon.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Debug\newclscommon.dll</td><td>1</td><td/></row>
 		<row><td>newclscommon.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>NEWCLS~1.PDB|newclscommon.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Debug\newclscommon.pdb</td><td>1</td><td/></row>
 		<row><td>ribboncontrolslibrary.dll</td><td>RibbonControlsLibrary.dll</td><td>RIBBON~1.DLL|RibbonControlsLibrary.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Debug\RibbonControlsLibrary.dll</td><td>1</td><td/></row>
+		<row><td>spire.license.dll</td><td>Spire.License.dll</td><td>SPIREL~1.DLL|Spire.License.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Debug\Spire.License.dll</td><td>1</td><td/></row>
+		<row><td>spire.pdf.dll</td><td>Spire.Pdf.dll</td><td>SPIREP~1.DLL|Spire.Pdf.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Debug\Spire.Pdf.dll</td><td>1</td><td/></row>
+		<row><td>spire.pdf.xml</td><td>ISX_DEFAULTCOMPONENT</td><td>SPIREP~1.XML|Spire.Pdf.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Debug\Spire.Pdf.xml</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2066,17 +2075,19 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>Component</td><td/><td/><td>_F90C996A_7A0F_46B2_9CAC_1CC5896EA069_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>ExcelAddIn1.dll</td><td/><td/><td>_B95695B0_7228_4D4F_8F52_3DF11A601FFB_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Component</td><td/><td/><td>_E64F140B_CFD3_49C5_B152_ABC982FD923B_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ExcelAddIn1.dll</td><td/><td/><td>_91C6005A_8769_44F2_BC5F_9303366AE519_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_C95B6B1A_5442_429C_8E51_E20EA1BB3D7E_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_45BD8E34_C237_49B0_BE7D_0DBAFB9A6BE7_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td/><td/><td>_ABF050DC_FD74_48CC_B7E1_EC85F69C283C_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Microsoft.Windows.Shell.dll</td><td/><td/><td>_2C116346_8995_4B8A_A471_DBC7AF7ECE32_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>MySql.Data.dll</td><td/><td/><td>_178C2D87_2D52_4D41_BFE5_D44357F44273_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>RibbonControlsLibrary.dll</td><td/><td/><td>_EFEEC673_187A_47AE_BE0E_3055CEAB5A33_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>clsBuiness.dll</td><td/><td/><td>_F81C598C_2C63_45BB_839A_980D7E349155_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>dblist.dll</td><td/><td/><td>_EA5CDA64_5008_4933_B08A_FDA4719CCE6C_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>newclscommon.dll</td><td/><td/><td>_7E70AFCA_11A5_423D_890D_6DBB75713F9E_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td/><td/><td>_F686D35F_AFF5_4C9C_876F_27C26C85A3D6_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.Windows.Shell.dll</td><td/><td/><td>_291E0E54_D57C_4168_B2F0_3DC878AE182F_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>MySql.Data.dll</td><td/><td/><td>_DA4546D8_C3B9_43F6_BBDF_8B8B80CECCAD_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>RibbonControlsLibrary.dll</td><td/><td/><td>_BE9CB502_7D23_40F5_A700_B5A831641FC9_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Spire.License.dll</td><td/><td/><td>_6B4DFDDB_C0BF_4001_9E05_595924B60EE8_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Spire.Pdf.dll</td><td/><td/><td>_6587001A_28BB_4398_A416_FB73220FB23E_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>clsBuiness.dll</td><td/><td/><td>_C813B726_F477_40EC_AF76_857270D34854_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>dblist.dll</td><td/><td/><td>_61952025_AC08_4308_A843_7F8B2DA726C7_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>newclscommon.dll</td><td/><td/><td>_9397BEF0_A18D_4A73_9AE8_1E15EE4D1E15_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">

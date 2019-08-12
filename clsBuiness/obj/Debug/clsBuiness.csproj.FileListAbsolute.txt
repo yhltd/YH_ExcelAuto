@@ -17,3 +17,5 @@ D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.csprojResolveAssemblyRefe
 D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.dll
 D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.pdb
 D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\MySql.Data.dll
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\Spire.Doc.dll
+D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\Spire.License.dll

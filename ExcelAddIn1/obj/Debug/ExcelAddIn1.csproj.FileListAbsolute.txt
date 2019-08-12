@@ -52,3 +52,7 @@ D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Debug\ExcelAddIn1.bakfrmMessageShow.resou
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Debug\MySql.Data.dll
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Debug\ExcelAddIn1.frmAlterinfo.resources
 D:\Devlop\YH_ExcelAuto\ExcelAddIn1\obj\Debug\ExcelAddIn1.Login.resources
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Debug\Spire.Pdf.dll
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Debug\Spire.License.dll
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Debug\Spire.Pdf.xml
+D:\Devlop\YH_ExcelAuto\ExcelAddIn1\bin\Debug\Spire.Doc.dll
