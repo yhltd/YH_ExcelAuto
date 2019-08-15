@@ -12,8 +12,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
- 
+
 using System.Drawing.Imaging;
+using System.IO;
 
 namespace ExcelAddIn1
 {
@@ -218,6 +219,11 @@ namespace ExcelAddIn1
                             temp.password = o[i, 8].ToString().Trim();
 
 
+                        temp.bushiyong = "";
+                        if (o[i, 9] != null)
+                            temp.bushiyong = o[i, 9].ToString().Trim();
+
+
 
 
                         #endregion
@@ -262,11 +268,31 @@ namespace ExcelAddIn1
 
             foreach (clsSendmailinfo item in MAPPINGResult)
             {
+                if (item.bushiyong != null && item.bushiyong.Length >= 1)
+                    continue;
 
                 //bgWorker.ReportProgress(0, "已发送  :  " + index.ToString() + "/" + MAPPINGResult.ToString());
 
                 toolStripLabel2.Text = "正在发送  :   " + index.ToString() + "/" + MAPPINGResult.Count.ToString();
 
+
+                //添加模板
+                if (item.msg_tel != null)
+                {
+                    string A_Path = Path.GetDirectoryName(Copyfile) + "\\" + item.subject + ".txt";
+                    if (File.Exists(A_Path))
+                    {
+                        string[] fileTextnew = File.ReadAllLines(A_Path);
+                        string htmlbody = "";
+
+                        for (int i = 0; i < fileTextnew.Length; i++)
+                        {
+                            htmlbody = htmlbody + fileTextnew[i];
+                        }
+
+                        item.bodyinfo = htmlbody;
+                    }
+                }
 
                 string[] fileText = System.Text.RegularExpressions.Regex.Split(item.acc, ",");
                 BusinessHelp.SendMail_Allport(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText);
@@ -480,7 +506,7 @@ namespace ExcelAddIn1
 
             #endregion
         }
-     
+
 
         private void toolStripMenuItem7_Click(object sender, EventArgs e)
         {
@@ -498,7 +524,7 @@ namespace ExcelAddIn1
 
         private void toolStripMenuItem8_Click(object sender, EventArgs e)
         {
-            
+
             string strDesktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
             string filename = strDesktopPath + "\\Export image " + DateTime.Now.ToString("yyyyMMdd-ss") + ".jpg";
             clsAllnew bu = new clsAllnew();
@@ -526,7 +552,7 @@ namespace ExcelAddIn1
                 Thread t = new Thread(pdf_jpg);
                 t.Start();//线程开始执行
 
- 
+
                 return;
 
             }
@@ -534,7 +560,7 @@ namespace ExcelAddIn1
             {
                 MessageBox.Show("Error" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-             
+
                 throw;
             }
         }
