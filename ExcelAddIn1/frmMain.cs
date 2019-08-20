@@ -177,7 +177,7 @@ namespace ExcelAddIn1
                         clsSendmailinfo temp = new clsSendmailinfo();
 
                         #region 基础信息
-
+                        //
                         temp.sendfrom = "";
                         if (o[i, 1] != null)
                             temp.sendfrom = o[i, 1].ToString().Trim();
