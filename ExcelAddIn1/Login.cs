@@ -34,8 +34,8 @@ namespace ExcelAddIn1
             {
                 clsmytest buiness = new clsmytest();
 
-                //bool istue = buiness.checkname(textBox2.Text, textBox1.Text);//正式时候放开
-                bool istue = buiness.checkname("YH_ExcelAuto", "yhltd");
+                  bool istue = buiness.checkname(textBox2.Text, textBox1.Text);//正式时候放开
+                //bool istue = buiness.checkname("YH_ExcelAuto", "yhltd");
                 if (istue == false)
                 {
                     MessageBox.Show("请输入正确用户名密码或请联系开发人员");
