@@ -77,14 +77,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="clsBuiness.dll" size="17408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="clsBuiness.dll" size="22016">
       <assemblyIdentity name="clsBuiness" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>w6CWsMXhO1Op6nkAY20GoUSRNbA=</dsig:DigestValue>
+        <dsig:DigestValue>hUxfdWns/yEw8PsZSVx6adQkZgk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,13 +102,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExcelAddIn1.dll" size="198144">
-      <assemblyIdentity name="ExcelAddIn1" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="ExcelAddIn1" version="1.0.0.3" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ZBrC/GYxkWetNhXDY/BSDXm4o98=</dsig:DigestValue>
+        <dsig:DigestValue>b0PuJXewkZT3aQT4v//UEHc+Nj4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -212,7 +212,7 @@
     <vstav3:entryPointsCollection>
       <vstav3:entryPoints>
         <vstav3:entryPoint class="ExcelAddIn1.ThisAddIn">
-          <assemblyIdentity name="ExcelAddIn1" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
+          <assemblyIdentity name="ExcelAddIn1" version="1.0.0.3" language="neutral" processorArchitecture="msil" />
         </vstav3:entryPoint>
       </vstav3:entryPoints>
     </vstav3:entryPointsCollection>
@@ -226,11 +226,11 @@
             <vstov4:friendlyName>ExcelAddIn1</vstov4:friendlyName>
             <vstov4:description>ExcelAddIn1</vstov4:description>
             <vstov4.1:ribbonTypes xmlns:vstov4.1="urn:schemas-microsoft-com:vsto.v4.1">
-              <vstov4.1:ribbonType name="ExcelAddIn1.Ribbon3, ExcelAddIn1, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null" />
+              <vstov4.1:ribbonType name="ExcelAddIn1.Ribbon3, ExcelAddIn1, Version=1.0.0.3, Culture=neutral, PublicKeyToken=null" />
             </vstov4.1:ribbonTypes>
           </vstov4:appAddIn>
         </vstov4:customization>
       </vstov4:customizations>
     </vstav3:application>
   </vstav3:addIn>
-<publisherIdentity name="CN=USER-20190201LS\Administrator" issuerKeyHash="c9d1b6729e546ead6cfd09d4b39e98ec61eddadf" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>25WIvkop/J0Y2/L28SyNBU/x9JI=</DigestValue></Reference></SignedInfo><SignatureValue>jO5cqW7LHrZ5IIGIFml/Mknys0opv50sWzVi8ubqaqWo3X35/CB3OwU/xBqGF3qPEH+XJdTT0wbX+0QN12W/MIicfd+46Gta6yrB8ZDqBQWvga8RQXjxyA99t8tik2H4OfvOIcYW4l9pQCkxRvXaO/yD92l+RraMZor/JVA47ls=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>niPun2/CBSrZg5DtiLmuN2bTe2yoEehrFN+fFMvL8cJlDoyZ1501AkJBHAiRej35EI0GhfITiWz3z+vIGZSUxQN7ZKTt5QO835FNvgo2xsS7fFHy+nh4/y8mqQ5k5PYR+aP5EPyTBB0HJITVO31vlZShgPLHC7XwYiZBEYhNz2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="92f4f14f058d2cf1f6f2db189dfc294abe8895db" Description="" Url=""><as:assemblyIdentity name="ExcelAddIn1.dll" version="1.0.0.0" publicKeyToken="209a6bf0339a434b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=USER-20190201LS\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>x8O2Dm6CWOP9vH19VHyJBQ//+XM=</DigestValue></Reference></SignedInfo><SignatureValue>fqt7Kc/Rik36um7OcNKricUGDf/sSgAHSh+qpwgeNMd0ujNnRWXLkJ6wrmScvUqZCZcNKXq5q63W87RcQnn3I43Ii+zWwFYMl9j/e+PTwy83n3qFdkkzJ14cNsIZUfQiM7tj6Fz7dkXP1XaT+34iRNGFFC08g4L7aqEfScVOQuQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>niPun2/CBSrZg5DtiLmuN2bTe2yoEehrFN+fFMvL8cJlDoyZ1501AkJBHAiRej35EI0GhfITiWz3z+vIGZSUxQN7ZKTt5QO835FNvgo2xsS7fFHy+nh4/y8mqQ5k5PYR+aP5EPyTBB0HJITVO31vlZShgPLHC7XwYiZBEYhNz2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICDTCCAXagAwIBAgIQMEibEQdT3a1M25MaU00HyzANBgkqhkiG9w0BAQUFADBFMUMwQQYDVQQDHjoAVQBTAEUAUgAtADIAMAAxADkAMAAyADAAMQBMAFMAXABBAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByMB4XDTE5MDcxOTA3MTIyOVoXDTIwMDcxODEzMTIyOVowRTFDMEEGA1UEAx46AFUAUwBFAFIALQAyADAAMQA5ADAAMgAwADEATABTAFwAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAniPun2/CBSrZg5DtiLmuN2bTe2yoEehrFN+fFMvL8cJlDoyZ1501AkJBHAiRej35EI0GhfITiWz3z+vIGZSUxQN7ZKTt5QO835FNvgo2xsS7fFHy+nh4/y8mqQ5k5PYR+aP5EPyTBB0HJITVO31vlZShgPLHC7XwYiZBEYhNz2kCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBgkq0ziHPFuMDRZXwt/HmhPei+cJJsE39ErFn+OtM0p7bUZE9tMWHM06JJnukFVBpcntGRE3RBc/QNS4GoZQ/Lj48LFCFo2XtWlzoN2xdapCcLp863r3zrxLvNGES/uDjGKcwVBRu9i4Knj6ELq4mSMUEZYoPtolFGCRmtfGLyQw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=USER-20190201LS\Administrator" issuerKeyHash="c9d1b6729e546ead6cfd09d4b39e98ec61eddadf" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>3Y+ctjBkQjJi6RoHHanEtoBKqVQ=</DigestValue></Reference></SignedInfo><SignatureValue>KIRhFoFc1uZYYLpjVRf9r8ffi2MX68ToXiVsvoxIuGm6t81EJWlxbVNk2vkOvT5tJLDQ6cCZ77v3hRSfxMM/f4IEn7aAo48xhz/QpcHDSXtdAicBCZ6EdtL61XzwVeXzCdMteT0JgtqIPzL76OyOtYjMlD65+vyFjO3JHMCu3KU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>niPun2/CBSrZg5DtiLmuN2bTe2yoEehrFN+fFMvL8cJlDoyZ1501AkJBHAiRej35EI0GhfITiWz3z+vIGZSUxQN7ZKTt5QO835FNvgo2xsS7fFHy+nh4/y8mqQ5k5PYR+aP5EPyTBB0HJITVO31vlZShgPLHC7XwYiZBEYhNz2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="54a94a80b6c4a91d071ae96232426430b69c8fdd" Description="" Url=""><as:assemblyIdentity name="ExcelAddIn1.dll" version="1.0.0.0" publicKeyToken="209a6bf0339a434b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=USER-20190201LS\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>kC/e/CCFNjuPMReaJoK87KMXAzo=</DigestValue></Reference></SignedInfo><SignatureValue>CYAYxlL8ivXNpuDtauqrGAhvGmMa0GOhA5F21hpJVmCRC9WTPyFlE1+lpU8cmRQAZy8KJ1jwSoemUUwPquzYnJqTifvbtHEjWTZ50dGmMX+CcVUsFkUPoK4MT7CD+8/XuqXu4oDDF3xtGBIuaf59HrQfkShKxDCG03ZaFsQ7alk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>niPun2/CBSrZg5DtiLmuN2bTe2yoEehrFN+fFMvL8cJlDoyZ1501AkJBHAiRej35EI0GhfITiWz3z+vIGZSUxQN7ZKTt5QO835FNvgo2xsS7fFHy+nh4/y8mqQ5k5PYR+aP5EPyTBB0HJITVO31vlZShgPLHC7XwYiZBEYhNz2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICDTCCAXagAwIBAgIQMEibEQdT3a1M25MaU00HyzANBgkqhkiG9w0BAQUFADBFMUMwQQYDVQQDHjoAVQBTAEUAUgAtADIAMAAxADkAMAAyADAAMQBMAFMAXABBAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByMB4XDTE5MDcxOTA3MTIyOVoXDTIwMDcxODEzMTIyOVowRTFDMEEGA1UEAx46AFUAUwBFAFIALQAyADAAMQA5ADAAMgAwADEATABTAFwAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAniPun2/CBSrZg5DtiLmuN2bTe2yoEehrFN+fFMvL8cJlDoyZ1501AkJBHAiRej35EI0GhfITiWz3z+vIGZSUxQN7ZKTt5QO835FNvgo2xsS7fFHy+nh4/y8mqQ5k5PYR+aP5EPyTBB0HJITVO31vlZShgPLHC7XwYiZBEYhNz2kCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBgkq0ziHPFuMDRZXwt/HmhPei+cJJsE39ErFn+OtM0p7bUZE9tMWHM06JJnukFVBpcntGRE3RBc/QNS4GoZQ/Lj48LFCFo2XtWlzoN2xdapCcLp863r3zrxLvNGES/uDjGKcwVBRu9i4Knj6ELq4mSMUEZYoPtolFGCRmtfGLyQw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

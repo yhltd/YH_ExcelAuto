@@ -295,7 +295,13 @@ namespace ExcelAddIn1
                 }
 
                 string[] fileText = System.Text.RegularExpressions.Regex.Split(item.acc, ",");
-                BusinessHelp.SendMail_Allport(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText);
+                if (item.msg_tel == null || item.msg_tel.Length == 0)
+                 
+                    BusinessHelp.SendMail_Allport(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText, item.msg_tel);
+                else
+
+                    BusinessHelp.outllook_moban_Send(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText, item.msg_tel);
+
                 index++;
             }
             MessageBox.Show("运行结束，已发送邮件：  " + (index - 1).ToString());
@@ -355,7 +361,7 @@ namespace ExcelAddIn1
             {
                 bgWorker.ReportProgress(0, "已发送  :  " + index.ToString() + "/" + MAPPINGResult.ToString());
                 string[] fileText = System.Text.RegularExpressions.Regex.Split(item.acc, ",");
-                BusinessHelp.SendMail_Allport(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText);
+                BusinessHelp.SendMail_Allport(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText,item.msg_tel);
                 index++;
             }
 

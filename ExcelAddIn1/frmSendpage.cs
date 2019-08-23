@@ -49,6 +49,9 @@ namespace ExcelAddIn1
 
         private void toolStripDropDownButton1_Click(object sender, EventArgs e)
         {
+            
+
+
             gotype = 0;
             // SendMail();
             //SendMailqq();
@@ -56,7 +59,7 @@ namespace ExcelAddIn1
 
 
             clsAllnew BusinessHelp = new clsAllnew();
-            BusinessHelp.SendMail_Allport(toolStripTextBox1.Text, toolStripTextBox2.Text, toolStripTextBox3.Text, textBox1.Text, textBox3.Text, textBox4.Text, null);
+            BusinessHelp.SendMail_Allport(toolStripTextBox1.Text, toolStripTextBox2.Text, toolStripTextBox3.Text, textBox1.Text, textBox3.Text, textBox4.Text, null,"");
 
             MessageBox.Show("发送完毕！");
 
@@ -251,6 +254,8 @@ namespace ExcelAddIn1
             return true;
 
         }
+     
+
         public void SendMailqq()
         {
 

@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
+using Outlook = Microsoft.Office.Interop.Outlook;
 namespace clsBuiness
 {
     public class clsAllnew
@@ -24,9 +25,11 @@ namespace clsBuiness
         public BackgroundWorker backgroundWorker1;
         public List<clsFenbiaoInfo> FenbiaoInfo;
         private string fullPath;
+        int nofindoutlooksendmail;
 
         public List<clsFenbiaoInfo> Buiness_Bankcharge(ref BackgroundWorker bgWorker, string casetype, string Password, string USER, List<string> Alist, string fullPath1)
         {
+            nofindoutlooksendmail = 0;
 
             fullPath = fullPath1;
 
@@ -184,7 +187,7 @@ namespace clsBuiness
                     #endregion
         }
 
-        public void SendMail_Allport(string Hosti, string fromi, string passkey, string toi, string Subjecti, string Bodyi, string[] Attachmentlist)
+        public void SendMail_Allport(string Hosti, string fromi, string passkey, string toi, string Subjecti, string Bodyi, string[] Attachmentlist, string msgpath)
         {
 
             {
@@ -226,6 +229,72 @@ namespace clsBuiness
                 {
                     // this.lbMessage.Text = "Send Email Failed." + ex.ToString();
                 }
+            }
+        }
+
+        public bool outllook_moban_Send(string Hosti, string fromi, string passkey, string toi, string Subjecti, string Bodyi, string[] Attachmentlist, string msgpath)
+        {
+
+            try
+            {
+                //For Each SendingAccount In Outlook.Session.Accounts
+
+
+                //   If SendingAccount.AccountType = olPop3 And SendingAccount Like Sheet1.Cells(rowcount, 1).Value Then
+
+                bool issend = false;
+
+
+                Outlook.Application olApp = new Outlook.Application();
+                int dsd = olApp.Session.Accounts.Count;
+
+                for (int i = 0; i < olApp.Session.Accounts.Count; i++)
+                {
+                    var names = olApp.Session.Accounts[i + 1];
+                    var nne = names.SmtpAddress;
+                    if (nne.Contains(fromi.ToLower()))
+                    {
+                        var objMail = olApp.CreateItemFromTemplate(msgpath);
+
+                        objMail.To = toi;
+
+                        objMail.Subject = Subjecti;
+
+                        ((Outlook._MailItem)objMail).Send();
+
+                        objMail = null;
+                        olApp = null;
+                        issend = true;
+                        return true;
+                    }
+
+                }
+                if (dsd > 0 && issend == false && nofindoutlooksendmail == 0)
+                {
+                    var objMail = olApp.CreateItemFromTemplate(msgpath);
+
+                    objMail.To = toi;
+
+                    objMail.Subject = Subjecti;
+
+                    ((Outlook._MailItem)objMail).Send();
+
+                    objMail = null;
+                    olApp = null;
+                    issend = true;
+                    return true;
+
+
+
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("错误" + ex.Message,"系统",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return false;
+                throw;
             }
         }
         public void WordToJPGBySpire(string wordFile, string jpgFile)
