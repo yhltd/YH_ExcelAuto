@@ -24,3 +24,5 @@ D:\Devlop\YH_ExcelAuto\测试功能专用\obj\Release\测试功能专用.Propert
 D:\Devlop\YH_ExcelAuto\测试功能专用\obj\Release\测试功能专用.csproj.GenerateResource.Cache
 D:\Devlop\YH_ExcelAuto\测试功能专用\obj\Release\测试功能专用.exe
 D:\Devlop\YH_ExcelAuto\测试功能专用\obj\Release\测试功能专用.pdb
+D:\Devlop\YH_ExcelAuto\测试功能专用\bin\Release\Spire.Doc.dll
+D:\Devlop\YH_ExcelAuto\测试功能专用\bin\Release\Spire.License.dll
