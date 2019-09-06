@@ -2,3 +2,7 @@ D:\Devlop\YH_ExcelAuto\dblist\bin\Release\dblist.dll
 D:\Devlop\YH_ExcelAuto\dblist\bin\Release\dblist.pdb
 D:\Devlop\YH_ExcelAuto\dblist\obj\Release\dblist.dll
 D:\Devlop\YH_ExcelAuto\dblist\obj\Release\dblist.pdb
+C:\bake40mypc\Devlop\YH_ExcelAuto\dblist\bin\Release\dblist.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\dblist\bin\Release\dblist.pdb
+C:\bake40mypc\Devlop\YH_ExcelAuto\dblist\obj\Release\dblist.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\dblist\obj\Release\dblist.pdb

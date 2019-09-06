@@ -19,3 +19,15 @@ D:\Devlop\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.pdb
 D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\MySql.Data.dll
 D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\Spire.Doc.dll
 D:\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\Spire.License.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\clsBuiness.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\clsBuiness.pdb
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\dblist.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\newclscommon.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\Spire.Doc.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\Spire.License.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\MySql.Data.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\dblist.pdb
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\bin\Debug\newclscommon.pdb
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.csprojResolveAssemblyReference.cache
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.pdb

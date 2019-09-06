@@ -12,3 +12,10 @@ D:\Devlop\YH_ExcelAuto\newclscommon\bin\Debug\dblist.pdb
 D:\Devlop\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.csprojResolveAssemblyReference.cache
 D:\Devlop\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.dll
 D:\Devlop\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.pdb
+C:\bake40mypc\Devlop\YH_ExcelAuto\newclscommon\bin\Debug\newclscommon.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\newclscommon\bin\Debug\newclscommon.pdb
+C:\bake40mypc\Devlop\YH_ExcelAuto\newclscommon\bin\Debug\dblist.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\newclscommon\bin\Debug\dblist.pdb
+C:\bake40mypc\Devlop\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.csprojResolveAssemblyReference.cache
+C:\bake40mypc\Devlop\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.dll
+C:\bake40mypc\Devlop\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.pdb
