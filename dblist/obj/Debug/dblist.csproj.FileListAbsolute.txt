@@ -10,6 +10,5 @@ D:\Devlop\YH_ExcelAuto\dblist\obj\Debug\dblist.pdb
 D:\Devlop\YH_ExcelAuto\dblist\obj\Debug\dblist.csprojResolveAssemblyReference.cache
 C:\bake40mypc\Devlop\YH_ExcelAuto\dblist\bin\Debug\dblist.dll
 C:\bake40mypc\Devlop\YH_ExcelAuto\dblist\bin\Debug\dblist.pdb
-C:\bake40mypc\Devlop\YH_ExcelAuto\dblist\obj\Debug\dblist.csprojResolveAssemblyReference.cache
 C:\bake40mypc\Devlop\YH_ExcelAuto\dblist\obj\Debug\dblist.dll
 C:\bake40mypc\Devlop\YH_ExcelAuto\dblist\obj\Debug\dblist.pdb

@@ -224,6 +224,9 @@ namespace ExcelAddIn1
                             temp.bushiyong = o[i, 9].ToString().Trim();
 
 
+                        temp.jian_ge = "";
+                        if (o[i, 11] != null)
+                            temp.jian_ge = o[i, 11].ToString().Trim();
 
 
                         #endregion
@@ -293,10 +296,13 @@ namespace ExcelAddIn1
                         item.bodyinfo = htmlbody;
                     }
                 }
+                if (item.jian_ge != null && item.jian_ge.Length >= 0)
+                    Thread.Sleep(Convert.ToInt32(item.jian_ge)*1000);
+
 
                 string[] fileText = System.Text.RegularExpressions.Regex.Split(item.acc, ",");
                 if (item.msg_tel == null || item.msg_tel.Length == 0)
-                 
+
                     BusinessHelp.SendMail_Allport(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText, item.msg_tel);
                 else
 
@@ -361,7 +367,7 @@ namespace ExcelAddIn1
             {
                 bgWorker.ReportProgress(0, "已发送  :  " + index.ToString() + "/" + MAPPINGResult.ToString());
                 string[] fileText = System.Text.RegularExpressions.Regex.Split(item.acc, ",");
-                BusinessHelp.SendMail_Allport(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText,item.msg_tel);
+                BusinessHelp.SendMail_Allport(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText, item.msg_tel);
                 index++;
             }
 

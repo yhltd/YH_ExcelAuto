@@ -625,6 +625,7 @@ namespace dblist
         public string password { get; set; }
 
         public string bushiyong { get; set; }
+        public string jian_ge { get; set; }
 
     }
 }
