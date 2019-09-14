@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -73,14 +73,16 @@
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.导入数据模板ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.开始转换ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip6 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel11 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel12 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel13 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel14 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel15 = new System.Windows.Forms.ToolStripLabel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.toolStrip7 = new System.Windows.Forms.ToolStrip();
             this.toolStripDropDownButton4 = new System.Windows.Forms.ToolStripDropDownButton();
@@ -88,8 +90,9 @@
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
-            this.导入数据模板ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.开始转换ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pDF合并ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.数据源路径文件夹ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -104,8 +107,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStrip5.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.toolStrip6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.toolStrip6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.toolStrip7.SuspendLayout();
             this.SuspendLayout();
@@ -159,7 +162,7 @@
             // 汇总多表ToolStripMenuItem
             // 
             this.汇总多表ToolStripMenuItem.Name = "汇总多表ToolStripMenuItem";
-            this.汇总多表ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.汇总多表ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.汇总多表ToolStripMenuItem.Text = "汇总多表";
             this.汇总多表ToolStripMenuItem.Click += new System.EventHandler(this.汇总多表ToolStripMenuItem_Click);
             // 
@@ -234,8 +237,8 @@
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -316,7 +319,7 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem1.Text = "单邮箱发送";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -326,21 +329,21 @@
             this.导入数据模板ToolStripMenuItem,
             this.开始批量发信ToolStripMenuItem});
             this.多邮箱ToolStripMenuItem.Name = "多邮箱ToolStripMenuItem";
-            this.多邮箱ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.多邮箱ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.多邮箱ToolStripMenuItem.Text = "多邮箱发送";
             this.多邮箱ToolStripMenuItem.Click += new System.EventHandler(this.多邮箱ToolStripMenuItem_Click);
             // 
             // 导入数据模板ToolStripMenuItem
             // 
             this.导入数据模板ToolStripMenuItem.Name = "导入数据模板ToolStripMenuItem";
-            this.导入数据模板ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.导入数据模板ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.导入数据模板ToolStripMenuItem.Text = "导入数据模板";
             this.导入数据模板ToolStripMenuItem.Click += new System.EventHandler(this.导入数据模板ToolStripMenuItem_Click);
             // 
             // 开始批量发信ToolStripMenuItem
             // 
             this.开始批量发信ToolStripMenuItem.Name = "开始批量发信ToolStripMenuItem";
-            this.开始批量发信ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.开始批量发信ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.开始批量发信ToolStripMenuItem.Text = "开始批量发信";
             this.开始批量发信ToolStripMenuItem.Click += new System.EventHandler(this.开始批量发信ToolStripMenuItem_Click);
             // 
@@ -415,8 +418,8 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -444,7 +447,8 @@
             this.toolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem3,
-            this.toolStripMenuItem2});
+            this.toolStripMenuItem2,
+            this.pDF合并ToolStripMenuItem});
             this.toolStripDropDownButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton3.Image")));
             this.toolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton3.Name = "toolStripDropDownButton3";
@@ -457,20 +461,20 @@
             this.toolStripMenuItem4,
             this.toolStripMenuItem5});
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(172, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem3.Text = "PDF转word(单件)";
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem4.Text = "导入数据模板";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem5.Text = "开始转换";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
@@ -480,8 +484,22 @@
             this.导入数据模板ToolStripMenuItem1,
             this.开始转换ToolStripMenuItem});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(172, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem2.Text = "PDF转图片";
+            // 
+            // 导入数据模板ToolStripMenuItem1
+            // 
+            this.导入数据模板ToolStripMenuItem1.Name = "导入数据模板ToolStripMenuItem1";
+            this.导入数据模板ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.导入数据模板ToolStripMenuItem1.Text = "导入数据模板";
+            this.导入数据模板ToolStripMenuItem1.Click += new System.EventHandler(this.导入数据模板ToolStripMenuItem1_Click);
+            // 
+            // 开始转换ToolStripMenuItem
+            // 
+            this.开始转换ToolStripMenuItem.Name = "开始转换ToolStripMenuItem";
+            this.开始转换ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.开始转换ToolStripMenuItem.Text = "开始转换";
+            this.开始转换ToolStripMenuItem.Click += new System.EventHandler(this.开始转换ToolStripMenuItem_Click);
             // 
             // tabPage4
             // 
@@ -494,6 +512,21 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Word文档类";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.toolStrip6, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.dataGridView3, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 28);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 315F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(810, 340);
+            this.tableLayoutPanel3.TabIndex = 6;
             // 
             // toolStrip6
             // 
@@ -536,26 +569,11 @@
             this.toolStripLabel15.Name = "toolStripLabel15";
             this.toolStripLabel15.Size = new System.Drawing.Size(0, 22);
             // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.toolStrip6, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.dataGridView3, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 28);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 315F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(810, 340);
-            this.tableLayoutPanel3.TabIndex = 6;
-            // 
             // dataGridView3
             // 
             this.dataGridView3.AllowUserToAddRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -596,42 +614,51 @@
             this.toolStripMenuItem7,
             this.toolStripMenuItem8});
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(174, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem6.Text = "word转图片(单件)";
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem7.Text = "导入数据模板";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem8.Text = "开始转换";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(174, 22);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem9.Text = "单邮箱发送";
             // 
-            // 导入数据模板ToolStripMenuItem1
+            // pDF合并ToolStripMenuItem
             // 
-            this.导入数据模板ToolStripMenuItem1.Name = "导入数据模板ToolStripMenuItem1";
-            this.导入数据模板ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.导入数据模板ToolStripMenuItem1.Text = "导入数据模板";
-            this.导入数据模板ToolStripMenuItem1.Click += new System.EventHandler(this.导入数据模板ToolStripMenuItem1_Click);
+            this.pDF合并ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.数据源路径文件夹ToolStripMenuItem,
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem});
+            this.pDF合并ToolStripMenuItem.Name = "pDF合并ToolStripMenuItem";
+            this.pDF合并ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pDF合并ToolStripMenuItem.Text = "PDF合并";
             // 
-            // 开始转换ToolStripMenuItem
+            // 数据源路径文件夹ToolStripMenuItem
             // 
-            this.开始转换ToolStripMenuItem.Name = "开始转换ToolStripMenuItem";
-            this.开始转换ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.开始转换ToolStripMenuItem.Text = "开始转换";
-            this.开始转换ToolStripMenuItem.Click += new System.EventHandler(this.开始转换ToolStripMenuItem_Click);
+            this.数据源路径文件夹ToolStripMenuItem.Name = "数据源路径文件夹ToolStripMenuItem";
+            this.数据源路径文件夹ToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.数据源路径文件夹ToolStripMenuItem.Text = "数据源路径（文件夹）";
+            this.数据源路径文件夹ToolStripMenuItem.Click += new System.EventHandler(this.数据源路径文件夹ToolStripMenuItem_Click);
+            // 
+            // 开始按照文件夹显示顺序合并ToolStripMenuItem
+            // 
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Name = "开始按照文件夹显示顺序合并ToolStripMenuItem";
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Text = "开始按照文件夹显示顺序合并";
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Click += new System.EventHandler(this.开始按照文件夹显示顺序合并ToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -669,10 +696,10 @@
             this.toolStrip5.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.toolStrip6.ResumeLayout(false);
-            this.toolStrip6.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.toolStrip6.ResumeLayout(false);
+            this.toolStrip6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.toolStrip7.ResumeLayout(false);
             this.toolStrip7.PerformLayout();
@@ -740,6 +767,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem 导入数据模板ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 开始转换ToolStripMenuItem;
-
+        private System.Windows.Forms.ToolStripMenuItem pDF合并ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 数据源路径文件夹ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开始按照文件夹显示顺序合并ToolStripMenuItem;
     }
 }

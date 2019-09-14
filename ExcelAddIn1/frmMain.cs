@@ -15,6 +15,8 @@ using System.Windows.Forms;
 
 using System.Drawing.Imaging;
 using System.IO;
+using System.Collections;
+
 
 namespace ExcelAddIn1
 {
@@ -33,7 +35,8 @@ namespace ExcelAddIn1
         private System.Timers.Timer timerAlter_new;
         List<clsSendmailinfo> MAPPINGResult;
         private bool IsRun = false;
-
+        public string path;
+        private List<string> Alist = new List<string>();
         public frmMain()
         {
             InitializeComponent();
@@ -297,7 +300,7 @@ namespace ExcelAddIn1
                     }
                 }
                 if (item.jian_ge != null && item.jian_ge.Length >= 0)
-                    Thread.Sleep(Convert.ToInt32(item.jian_ge)*1000);
+                    Thread.Sleep(Convert.ToInt32(item.jian_ge) * 1000);
 
 
                 string[] fileText = System.Text.RegularExpressions.Regex.Split(item.acc, ",");
@@ -616,6 +619,96 @@ namespace ExcelAddIn1
         {
             toolStripLabel1.Text = "转换期间比较漫长请耐心等待.....";
         }
+
+        private void 数据源路径文件夹ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.FolderBrowserDialog dialog = new System.Windows.Forms.FolderBrowserDialog();
+            dialog.Description = "请选择所在文件夹";
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                if (string.IsNullOrEmpty(dialog.SelectedPath))
+                {
+                    MessageBox.Show(this, "文件夹路径不能为空", "提示");
+                    return;
+                }
+                path = dialog.SelectedPath;
+
+
+
+            }
+            else
+                return;
+
+            Alist = new List<string>();
+
+            Alist = GetBy_CategoryReportFileName(path);
+
+            MessageBox.Show(this, "导入完成，共计：" + Alist.Count.ToString() + "个文件", "提示");
+        }
+        public List<string> GetBy_CategoryReportFileName(string dirPath)
+        {
+
+            List<string> FileNameList = new List<string>();
+            ArrayList list = new ArrayList();
+
+            if (Directory.Exists(dirPath))
+            {
+                list.AddRange(Directory.GetFiles(dirPath));
+            }
+            if (list.Count > 0)
+            {
+                foreach (object item in list)
+                {
+                    if (!item.ToString().Contains("~$"))
+                        //FileNameList.Add(item.ToString().Replace(dirPath + "\\", ""));
+                        FileNameList.Add(item.ToString());
+                }
+            }
+
+            return FileNameList;
+        }
+
+        private void 开始按照文件夹显示顺序合并ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                toolStripLabel1.Text = "运行中，请耐心等待...-";
+
+                String[] files = Alist.ToArray();
+                string strDesktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+                string filename = strDesktopPath + "\\Merge PDF " + DateTime.Now.ToString("yyyyMMdd-ss") + ".pdf";
+
+
+                clsBll BusinessHelp = new clsBll();
+
+                BusinessHelp.MergePDF(path, filename);
+
+                //return;
+                //PdfDocumentBase docpsd = PdfDocument.MergeFiles(files);
+
+
+                //docpsd.Save(filename, FileFormat.PDF);
+                //System.Diagnostics.Process.Start(filename);
+
+
+                toolStripLabel1.Text = "生成完成-" + filename;
+
+                MessageBox.Show("运行结束，完成");
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return;
+
+                throw;
+            }
+
+        }
+
+
 
     }
 }
