@@ -37,6 +37,9 @@
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.发件人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.邮箱地址ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
+            this.发邮件秘钥ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripDropDownButton4 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripDropDownButton5 = new System.Windows.Forms.ToolStripDropDownButton();
@@ -64,9 +67,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.发邮件秘钥ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -167,6 +167,24 @@
             this.邮箱地址ToolStripMenuItem.Name = "邮箱地址ToolStripMenuItem";
             this.邮箱地址ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.邮箱地址ToolStripMenuItem.Text = "邮箱地址";
+            // 
+            // toolStripTextBox2
+            // 
+            this.toolStripTextBox2.Name = "toolStripTextBox2";
+            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
+            // 
+            // 发邮件秘钥ToolStripMenuItem
+            // 
+            this.发邮件秘钥ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox3});
+            this.发邮件秘钥ToolStripMenuItem.Name = "发邮件秘钥ToolStripMenuItem";
+            this.发邮件秘钥ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.发邮件秘钥ToolStripMenuItem.Text = "发邮件授权码";
+            // 
+            // toolStripTextBox3
+            // 
+            this.toolStripTextBox3.Name = "toolStripTextBox3";
+            this.toolStripTextBox3.Size = new System.Drawing.Size(100, 23);
             // 
             // toolStripDropDownButton2
             // 
@@ -284,6 +302,7 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "...";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox5
@@ -382,11 +401,11 @@
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.ContextMenuStrip = this.contextMenuStrip1;
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(77, 80);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(612, 21);
             this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "hzxdqwg01@vip.sina.com";
             // 
             // contextMenuStrip1
             // 
@@ -420,6 +439,8 @@
             this.textBox1.Size = new System.Drawing.Size(612, 21);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "512250428@qq.com";
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -443,26 +464,6 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
             this.toolStripMenuItem1.Text = "删除";
-            // 
-            // 发邮件秘钥ToolStripMenuItem
-            // 
-            this.发邮件秘钥ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripTextBox3});
-            this.发邮件秘钥ToolStripMenuItem.Name = "发邮件秘钥ToolStripMenuItem";
-            this.发邮件秘钥ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.发邮件秘钥ToolStripMenuItem.Text = "发邮件秘钥";
-            // 
-            // toolStripTextBox2
-            // 
-            this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
-            this.toolStripTextBox2.Text = "caoyuanlang901029@126.com";
-            // 
-            // toolStripTextBox3
-            // 
-            this.toolStripTextBox3.Name = "toolStripTextBox3";
-            this.toolStripTextBox3.Size = new System.Drawing.Size(100, 23);
-            this.toolStripTextBox3.Text = "lyh07910";
             // 
             // frmSendpage
             // 

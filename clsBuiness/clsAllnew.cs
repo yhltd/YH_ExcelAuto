@@ -212,12 +212,15 @@ namespace clsBuiness
                 //  message.Headers.Add("X-Mailer", "Microsoft Outlook");
 
                 //添加附件需将(附件先上传到服务器)
-                for (int i = 0; i < Attachmentlist.Length; i++)
+                if (Attachmentlist != null)
                 {
-                    if (Attachmentlist[i] != "")
+                    for (int i = 0; i < Attachmentlist.Length; i++)
                     {
-                        System.Net.Mail.Attachment data = new System.Net.Mail.Attachment(Attachmentlist[i], System.Net.Mime.MediaTypeNames.Application.Octet);
-                        message.Attachments.Add(data);
+                        if (Attachmentlist[i] != "")
+                        {
+                            System.Net.Mail.Attachment data = new System.Net.Mail.Attachment(Attachmentlist[i], System.Net.Mime.MediaTypeNames.Application.Octet);
+                            message.Attachments.Add(data);
+                        }
                     }
                 }
                 try

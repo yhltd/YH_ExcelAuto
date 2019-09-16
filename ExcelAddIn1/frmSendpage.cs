@@ -619,5 +619,16 @@ namespace ExcelAddIn1
         {
 
         }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.Text = toolStripTextBox2.Text;
+
+        }
     }
 }
