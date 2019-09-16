@@ -15,3 +15,12 @@ C:\bake40mypc\Devlop\YH_ExcelAuto\catch_mess_spy++\obj\Release\catch_mess_spy__.
 C:\bake40mypc\Devlop\YH_ExcelAuto\catch_mess_spy++\obj\Release\catch_mess_spy++.csproj.GenerateResource.Cache
 C:\bake40mypc\Devlop\YH_ExcelAuto\catch_mess_spy++\obj\Release\catch_mess_spy++.exe
 C:\bake40mypc\Devlop\YH_ExcelAuto\catch_mess_spy++\obj\Release\catch_mess_spy++.pdb
+C:\bake40mypc\YH_ExcelAuto\catch_mess_spy++\bin\Release\catch_mess_spy++.exe.config
+C:\bake40mypc\YH_ExcelAuto\catch_mess_spy++\bin\Release\catch_mess_spy++.exe
+C:\bake40mypc\YH_ExcelAuto\catch_mess_spy++\bin\Release\catch_mess_spy++.pdb
+C:\bake40mypc\YH_ExcelAuto\catch_mess_spy++\obj\Release\catch_mess_spy++.csprojResolveAssemblyReference.cache
+C:\bake40mypc\YH_ExcelAuto\catch_mess_spy++\obj\Release\catch_mess_spy__.Form1.resources
+C:\bake40mypc\YH_ExcelAuto\catch_mess_spy++\obj\Release\catch_mess_spy__.Properties.Resources.resources
+C:\bake40mypc\YH_ExcelAuto\catch_mess_spy++\obj\Release\catch_mess_spy++.csproj.GenerateResource.Cache
+C:\bake40mypc\YH_ExcelAuto\catch_mess_spy++\obj\Release\catch_mess_spy++.exe
+C:\bake40mypc\YH_ExcelAuto\catch_mess_spy++\obj\Release\catch_mess_spy++.pdb

@@ -75,6 +75,9 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.导入数据模板ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.开始转换ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pDF合并ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.数据源路径文件夹ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip6 = new System.Windows.Forms.ToolStrip();
@@ -90,9 +93,6 @@
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pDF合并ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.数据源路径文件夹ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.开始按照文件夹显示顺序合并ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -162,7 +162,7 @@
             // 汇总多表ToolStripMenuItem
             // 
             this.汇总多表ToolStripMenuItem.Name = "汇总多表ToolStripMenuItem";
-            this.汇总多表ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.汇总多表ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.汇总多表ToolStripMenuItem.Text = "汇总多表";
             this.汇总多表ToolStripMenuItem.Click += new System.EventHandler(this.汇总多表ToolStripMenuItem_Click);
             // 
@@ -319,7 +319,7 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
             this.toolStripMenuItem1.Text = "单邮箱发送";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -329,21 +329,21 @@
             this.导入数据模板ToolStripMenuItem,
             this.开始批量发信ToolStripMenuItem});
             this.多邮箱ToolStripMenuItem.Name = "多邮箱ToolStripMenuItem";
-            this.多邮箱ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.多邮箱ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.多邮箱ToolStripMenuItem.Text = "多邮箱发送";
             this.多邮箱ToolStripMenuItem.Click += new System.EventHandler(this.多邮箱ToolStripMenuItem_Click);
             // 
             // 导入数据模板ToolStripMenuItem
             // 
             this.导入数据模板ToolStripMenuItem.Name = "导入数据模板ToolStripMenuItem";
-            this.导入数据模板ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.导入数据模板ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.导入数据模板ToolStripMenuItem.Text = "导入数据模板";
             this.导入数据模板ToolStripMenuItem.Click += new System.EventHandler(this.导入数据模板ToolStripMenuItem_Click);
             // 
             // 开始批量发信ToolStripMenuItem
             // 
             this.开始批量发信ToolStripMenuItem.Name = "开始批量发信ToolStripMenuItem";
-            this.开始批量发信ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.开始批量发信ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.开始批量发信ToolStripMenuItem.Text = "开始批量发信";
             this.开始批量发信ToolStripMenuItem.Click += new System.EventHandler(this.开始批量发信ToolStripMenuItem_Click);
             // 
@@ -461,20 +461,20 @@
             this.toolStripMenuItem4,
             this.toolStripMenuItem5});
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(172, 22);
             this.toolStripMenuItem3.Text = "PDF转word(单件)";
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(148, 22);
             this.toolStripMenuItem4.Text = "导入数据模板";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(148, 22);
             this.toolStripMenuItem5.Text = "开始转换";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
@@ -484,22 +484,45 @@
             this.导入数据模板ToolStripMenuItem1,
             this.开始转换ToolStripMenuItem});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(172, 22);
             this.toolStripMenuItem2.Text = "PDF转图片";
             // 
             // 导入数据模板ToolStripMenuItem1
             // 
             this.导入数据模板ToolStripMenuItem1.Name = "导入数据模板ToolStripMenuItem1";
-            this.导入数据模板ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.导入数据模板ToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.导入数据模板ToolStripMenuItem1.Text = "导入数据模板";
             this.导入数据模板ToolStripMenuItem1.Click += new System.EventHandler(this.导入数据模板ToolStripMenuItem1_Click);
             // 
             // 开始转换ToolStripMenuItem
             // 
             this.开始转换ToolStripMenuItem.Name = "开始转换ToolStripMenuItem";
-            this.开始转换ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.开始转换ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.开始转换ToolStripMenuItem.Text = "开始转换";
             this.开始转换ToolStripMenuItem.Click += new System.EventHandler(this.开始转换ToolStripMenuItem_Click);
+            // 
+            // pDF合并ToolStripMenuItem
+            // 
+            this.pDF合并ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.数据源路径文件夹ToolStripMenuItem,
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem});
+            this.pDF合并ToolStripMenuItem.Name = "pDF合并ToolStripMenuItem";
+            this.pDF合并ToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.pDF合并ToolStripMenuItem.Text = "PDF合并";
+            // 
+            // 数据源路径文件夹ToolStripMenuItem
+            // 
+            this.数据源路径文件夹ToolStripMenuItem.Name = "数据源路径文件夹ToolStripMenuItem";
+            this.数据源路径文件夹ToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.数据源路径文件夹ToolStripMenuItem.Text = "数据源路径（文件夹）";
+            this.数据源路径文件夹ToolStripMenuItem.Click += new System.EventHandler(this.数据源路径文件夹ToolStripMenuItem_Click);
+            // 
+            // 开始按照文件夹显示顺序合并ToolStripMenuItem
+            // 
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Name = "开始按照文件夹显示顺序合并ToolStripMenuItem";
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Text = "开始按照创建时间顺序合并";
+            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Click += new System.EventHandler(this.开始按照文件夹显示顺序合并ToolStripMenuItem_Click);
             // 
             // tabPage4
             // 
@@ -614,51 +637,28 @@
             this.toolStripMenuItem7,
             this.toolStripMenuItem8});
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(174, 22);
             this.toolStripMenuItem6.Text = "word转图片(单件)";
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(148, 22);
             this.toolStripMenuItem7.Text = "导入数据模板";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(148, 22);
             this.toolStripMenuItem8.Text = "开始转换";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(174, 22);
             this.toolStripMenuItem9.Text = "单邮箱发送";
-            // 
-            // pDF合并ToolStripMenuItem
-            // 
-            this.pDF合并ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.数据源路径文件夹ToolStripMenuItem,
-            this.开始按照文件夹显示顺序合并ToolStripMenuItem});
-            this.pDF合并ToolStripMenuItem.Name = "pDF合并ToolStripMenuItem";
-            this.pDF合并ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.pDF合并ToolStripMenuItem.Text = "PDF合并";
-            // 
-            // 数据源路径文件夹ToolStripMenuItem
-            // 
-            this.数据源路径文件夹ToolStripMenuItem.Name = "数据源路径文件夹ToolStripMenuItem";
-            this.数据源路径文件夹ToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
-            this.数据源路径文件夹ToolStripMenuItem.Text = "数据源路径（文件夹）";
-            this.数据源路径文件夹ToolStripMenuItem.Click += new System.EventHandler(this.数据源路径文件夹ToolStripMenuItem_Click);
-            // 
-            // 开始按照文件夹显示顺序合并ToolStripMenuItem
-            // 
-            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Name = "开始按照文件夹显示顺序合并ToolStripMenuItem";
-            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
-            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Text = "开始按照文件夹显示顺序合并";
-            this.开始按照文件夹显示顺序合并ToolStripMenuItem.Click += new System.EventHandler(this.开始按照文件夹显示顺序合并ToolStripMenuItem_Click);
             // 
             // frmMain
             // 

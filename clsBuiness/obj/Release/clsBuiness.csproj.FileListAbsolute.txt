@@ -22,3 +22,16 @@ C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\bin\Release\newclscommon.pdb
 C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.csprojResolveAssemblyReference.cache
 C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.dll
 C:\bake40mypc\Devlop\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.pdb
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Release\clsBuiness.dll
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Release\clsBuiness.pdb
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Release\dblist.dll
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Release\itextsharp.dll
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Release\newclscommon.dll
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Release\Spire.Doc.dll
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Release\Spire.License.dll
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Release\MySql.Data.dll
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Release\dblist.pdb
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Release\newclscommon.pdb
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.csprojResolveAssemblyReference.cache
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.dll
+C:\bake40mypc\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.pdb
