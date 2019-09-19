@@ -142,7 +142,7 @@
             this.hostToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBox1});
             this.hostToolStripMenuItem.Name = "hostToolStripMenuItem";
-            this.hostToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.hostToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.hostToolStripMenuItem.Text = "Host";
             // 
             // toolStripTextBox1
@@ -157,7 +157,7 @@
             this.邮箱地址ToolStripMenuItem,
             this.发邮件秘钥ToolStripMenuItem});
             this.发件人信息ToolStripMenuItem.Name = "发件人信息ToolStripMenuItem";
-            this.发件人信息ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.发件人信息ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.发件人信息ToolStripMenuItem.Text = "发件人信息";
             // 
             // 邮箱地址ToolStripMenuItem
@@ -165,7 +165,7 @@
             this.邮箱地址ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBox2});
             this.邮箱地址ToolStripMenuItem.Name = "邮箱地址ToolStripMenuItem";
-            this.邮箱地址ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.邮箱地址ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.邮箱地址ToolStripMenuItem.Text = "邮箱地址";
             // 
             // toolStripTextBox2
@@ -178,7 +178,7 @@
             this.发邮件秘钥ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBox3});
             this.发邮件秘钥ToolStripMenuItem.Name = "发邮件秘钥ToolStripMenuItem";
-            this.发邮件秘钥ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.发邮件秘钥ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.发邮件秘钥ToolStripMenuItem.Text = "发邮件授权码";
             // 
             // toolStripTextBox3
