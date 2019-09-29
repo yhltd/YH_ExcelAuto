@@ -299,7 +299,7 @@ namespace ExcelAddIn1
                         item.bodyinfo = htmlbody;
                     }
                 }
-                if (item.jian_ge != null && item.jian_ge.Length >= 0)
+                if (item.jian_ge != null && item.jian_ge.Length > 0 && item.jian_ge != "")
                     Thread.Sleep(Convert.ToInt32(item.jian_ge) * 1000);
 
 

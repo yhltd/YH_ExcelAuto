@@ -230,6 +230,8 @@ namespace clsBuiness
                 }
                 catch (Exception ex)
                 {
+                    MessageBox.Show("错误 POP3设置授权码不正确，请重新确认" + ex.Message, "系统", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               
                     // this.lbMessage.Text = "Send Email Failed." + ex.ToString();
                 }
             }
@@ -307,5 +309,7 @@ namespace clsBuiness
             Image img = document.SaveToImages(0, ImageType.Metafile);
             img.Save(jpgFile, ImageFormat.Jpeg);
         }
+
+
     }
 }
