@@ -37,6 +37,8 @@ namespace ExcelAddIn1
         private bool IsRun = false;
         public string path;
         private List<string> Alist = new List<string>();
+        public string send_tiaoshu;
+
         public frmMain()
         {
             InitializeComponent();
@@ -50,6 +52,7 @@ namespace ExcelAddIn1
             if (form.ShowDialog() == DialogResult.OK)
             {
 
+                send_tiaoshu = form.send_tiaoshu;
 
             }
             else
@@ -270,15 +273,38 @@ namespace ExcelAddIn1
             clsAllnew BusinessHelp = new clsAllnew();
             int index = 1;
 
+
+            if (send_tiaoshu != null && send_tiaoshu != "" && send_tiaoshu.Length > 0)
+            {
+                if (MessageBox.Show("您当前是未确认收货版本，只支持每次发信" + Convert.ToInt32(send_tiaoshu) + "条，请确认收货后联系客服帮您开通不限制权限 （抱歉客户：由于部分低质量客户本着试用一次解决自己燃眉之急用一次就完事了，就不讲诚信欺骗我们无辜的服务商找个莫须有理由退款所以出此下策影响到了您还请见谅） , 继续 ?", "Info", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+
+                }
+                else
+                {
+                    return;
+                }
+
+            }
+
             toolStripLabel2.Text = "正在发送  :   " + index.ToString() + "/" + MAPPINGResult.Count.ToString();
 
+            int itime = 0;
             foreach (clsSendmailinfo item in MAPPINGResult)
             {
                 if (item.bushiyong != null && item.bushiyong.Length >= 1)
                     continue;
 
                 //bgWorker.ReportProgress(0, "已发送  :  " + index.ToString() + "/" + MAPPINGResult.ToString());
+                if (send_tiaoshu != null && send_tiaoshu != "" && send_tiaoshu.Length > 0)
+                {
+                    if (itime >= Convert.ToInt32(send_tiaoshu))
+                    {
+                        break;
 
+                    }
+                    itime++;
+                }
                 toolStripLabel2.Text = "正在发送  :   " + index.ToString() + "/" + MAPPINGResult.Count.ToString();
 
 
@@ -347,9 +373,6 @@ namespace ExcelAddIn1
 
                 return;
                 throw ex;
-
-
-
             }
 
 

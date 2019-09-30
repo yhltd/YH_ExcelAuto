@@ -12,8 +12,11 @@ namespace newclscommon
     public class clsmytest
     {
         public List<softTime_info> list_Server;
-        public  bool checkname(string user,string pass)
+        public string send_tiaoshu;
+
+        public bool checkname(string user, string pass)
         {
+            send_tiaoshu = "";
             #region Noway
             //bool success = NewMySqlHelper.DbConnectable();
 
@@ -22,8 +25,8 @@ namespace newclscommon
             //    MessageBox.Show("系统网络异常,请保持网络畅通或联系开发人员 !");
             //    return;
             //}
-           
-            string strSelect = "select * from control_soft_time where name='" + user + "'"+ " And password = '" + pass + "'";;
+
+            string strSelect = "select * from control_soft_time where name='" + user + "'" + " And password = '" + pass + "'"; ;
             list_Server = new List<softTime_info>();
             list_Server = findsoftTime(strSelect);
             DateTime oldDate = DateTime.Now;
@@ -41,15 +44,21 @@ namespace newclscommon
 
             TimeSpan ts = dt2 - dt3;
             int timeTotal = ts.Days;
+            //MessageBox.Show("edc");
+                
+            if (list_Server != null && list_Server.Count > 0)
+                send_tiaoshu = list_Server[0].mark2;//如果测试版本 限制发信数量
 
+            //MessageBox.Show("111edc");
+          
             if (timeTotal > 0 && timeTotal < 10)
             {
-              //  MessageBox.Show("本系统【HTmail】服务即将到期,请及时续费以免影响使用 !\r\n\r\n温馨提示：联系方式网址：www.yhocn.com\r\nQQ：512250428\r\n微信：bqwl07910", "服务到期", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //  MessageBox.Show("本系统【HTmail】服务即将到期,请及时续费以免影响使用 !\r\n\r\n温馨提示：联系方式网址：www.yhocn.com\r\nQQ：512250428\r\n微信：bqwl07910", "服务到期", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return true;
             }
             if (timeTotal < 0)
             {
-              //  MessageBox.Show("本系统【HTmail】服务到期,请及时续费 !\r\n\r\n温馨提示：联系方式网址：www.yhocn.com\r\nQQ：512250428\r\n微信：bqwl07910", "服务到期", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //  MessageBox.Show("本系统【HTmail】服务到期,请及时续费 !\r\n\r\n温馨提示：联系方式网址：www.yhocn.com\r\nQQ：512250428\r\n微信：bqwl07910", "服务到期", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 //Application.Exit();
 
                 //return;
@@ -113,7 +122,7 @@ namespace newclscommon
             reader.Dispose();
             reader.Close();
 
-           // cmd.Dispose();
+            // cmd.Dispose();
             return ClaimReport_Server;
         }
     }

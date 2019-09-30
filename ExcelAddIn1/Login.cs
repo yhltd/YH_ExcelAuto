@@ -16,6 +16,7 @@ namespace ExcelAddIn1
     {
 
         public string pass;
+        public string send_tiaoshu;
 
         public Login(string testvalue)
         {
@@ -34,8 +35,16 @@ namespace ExcelAddIn1
             {
                 clsmytest buiness = new clsmytest();
 
-                  bool istue = buiness.checkname(textBox2.Text, textBox1.Text);//正式时候放开
+                bool istue = buiness.checkname(textBox2.Text, textBox1.Text);//正式时候放开
                 //bool istue = buiness.checkname("YH_ExcelAuto", "yhltd");
+
+                send_tiaoshu = buiness.send_tiaoshu;
+                if (send_tiaoshu != null && send_tiaoshu != "" && send_tiaoshu.Length > 0)
+                {
+                    label2.Text = "欢迎试用本系统，禁止转包模仿 破解等商业用途，如违反将追究相关法律责任";
+
+                }
+
                 if (istue == false)
                 {
                     MessageBox.Show("请输入正确用户名密码或请联系开发人员");
