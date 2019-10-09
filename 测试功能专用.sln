@@ -16,9 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clsBuiness", "clsBuiness\clsBuiness.csproj", "{6EE714D1-8868-4689-9B52-0768BA8F896F}"
 EndProject
 Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "OfficeAddInSetup", "OfficeAddInSetup\OfficeAddInSetup.isproj", "{B99F4289-E236-4DCC-9824-BB1372B5AD8D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{59EEFEB1-8678-4AD5-897E-D5AFE711B864} = {59EEFEB1-8678-4AD5-897E-D5AFE711B864}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -92,3 +92,5 @@ C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.Properties.Resour
 C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.csproj.GenerateResource.Cache
 C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.dll
 C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.pdb
+C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\obj\Release\ExcelAddIn1.frm同一单元格加逗号.resources
+C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\bin\Release\IrisSkin2.dll

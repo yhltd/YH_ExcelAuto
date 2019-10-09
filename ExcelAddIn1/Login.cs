@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -14,7 +15,7 @@ namespace ExcelAddIn1
 {
     public partial class Login : Form
     {
-
+        Sunisoft.IrisSkin.SkinEngine se = null;
         public string pass;
         public string send_tiaoshu;
 
@@ -26,7 +27,11 @@ namespace ExcelAddIn1
 
             label2.Text = testvalue;
 
-
+            #region 引用皮肤
+            se = new Sunisoft.IrisSkin.SkinEngine();
+            se.SkinAllForm = true;
+            se.SkinFile = Path.Combine(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, ""), "WBlue.ssk"); 
+            #endregion
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -69,6 +74,7 @@ namespace ExcelAddIn1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Close();
 
         }
 

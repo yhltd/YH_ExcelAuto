@@ -30,10 +30,5 @@
 	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2015Limited\InstallShield.targets"/>
 	<ItemGroup/>
 	<ItemGroup/>
-	<ItemGroup>
-		<ProjectReference Include="..\ExcelAddIn1\ExcelAddIn1.csproj">
-			<Name>ExcelAddIn1</Name>
-			<Project>{59EEFEB1-8678-4AD5-897E-D5AFE711B864}</Project>
-		</ProjectReference>
-	</ItemGroup>
+	<ItemGroup/>
 </Project>

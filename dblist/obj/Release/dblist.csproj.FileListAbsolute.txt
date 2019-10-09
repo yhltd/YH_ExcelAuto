@@ -10,3 +10,4 @@ C:\bake40mypc\YH_ExcelAuto\dblist\bin\Release\dblist.dll
 C:\bake40mypc\YH_ExcelAuto\dblist\bin\Release\dblist.pdb
 C:\bake40mypc\YH_ExcelAuto\dblist\obj\Release\dblist.dll
 C:\bake40mypc\YH_ExcelAuto\dblist\obj\Release\dblist.pdb
+C:\bake40mypc\YH_ExcelAuto\dblist\obj\Release\dblist.csprojResolveAssemblyReference.cache

@@ -130,6 +130,9 @@
   -->
   <ItemGroup>
     <Reference Include="Accessibility" />
+    <Reference Include="IrisSkin2">
+      <HintPath>..\dll\IrisSkin2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Outlook, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -193,6 +196,12 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="CrystalButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalButton.designer.cs">
+      <DependentUpon>CrystalButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAlterinfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +232,12 @@
     <Compile Include="frmSendpage.Designer.cs">
       <DependentUpon>frmSendpage.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm同一单元格加逗号.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm同一单元格加逗号.Designer.cs">
+      <DependentUpon>frm同一单元格加逗号.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm汇总多表.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSendpage.resx">
       <DependentUpon>frmSendpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm同一单元格加逗号.resx">
+      <DependentUpon>frm同一单元格加逗号.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm汇总多表.resx">
       <DependentUpon>frm汇总多表.cs</DependentUpon>

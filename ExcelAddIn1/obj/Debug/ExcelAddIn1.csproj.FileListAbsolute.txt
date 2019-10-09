@@ -117,3 +117,5 @@ C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\bin\Debug\newclscommon.pdb
 C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\bin\Debug\Spire.Pdf.xml
 C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
 C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\obj\Debug\ExcelAddIn1.pdb
+C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\obj\Debug\ExcelAddIn1.frm同一单元格加逗号.resources
+C:\bake40mypc\YH_ExcelAuto\ExcelAddIn1\bin\Debug\IrisSkin2.dll

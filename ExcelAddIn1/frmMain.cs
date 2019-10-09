@@ -731,6 +731,25 @@ namespace ExcelAddIn1
 
         }
 
+        private void 同一单元格加逗号ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("请确认工具以下运行条件，1.导入的是Excel文件 2.Excel文件内有sheet名称为‘模板’ 3.A列是存放需整理的数据", "再次确认", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+
+            }
+            else
+            {
+                return;
+            }
+            var form = new frm同一单元格加逗号();
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+           
+
+        }
+
 
 
     }

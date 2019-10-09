@@ -628,4 +628,17 @@ namespace dblist
         public string jian_ge { get; set; }
 
     }
+    public class clstongyidanyuangehebing
+    {
+        public string _id { get; set; }
+        public string A_lie { get; set; }
+        public string B_lie { get; set; }
+        public string text { get; set; }
+        public string mark1 { get; set; }
+        public string mark2 { get; set; }
+        public string mark3 { get; set; }
+        public string mark4 { get; set; }
+        public string mark5 { get; set; }
+
+    }
 }
