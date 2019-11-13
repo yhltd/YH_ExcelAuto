@@ -1,0 +1,11 @@
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\bin\Debug\YH_ScanProject.exe.config
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\bin\Debug\YH_ScanProject.exe
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\bin\Debug\YH_ScanProject.pdb
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\bin\Debug\AipSdk.dll
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\bin\Debug\Newtonsoft.Json.dll
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.csprojResolveAssemblyReference.cache
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.frmmain.resources
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.Properties.Resources.resources
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.csproj.GenerateResource.Cache
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.exe
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.pdb
