@@ -18,6 +18,7 @@ namespace YH_ScanProject
     {
         private string Copyfile = "";
         public string path;
+        public string exit_path;
         private List<string> Alist = new List<string>();
         string fullname; //文件路径+文件名，用于保存
         public frmmain()
@@ -27,19 +28,27 @@ namespace YH_ScanProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog OpenFileDialog1 = new OpenFileDialog();
-            OpenFileDialog1.Filter = "bmp,jpg,gif,png,tiff,icon|*.bmp;*.jpg;*.gif;*.png;*.tiff;*.icon";
-            OpenFileDialog1.Title = "选择图片";
-            if (OpenFileDialog1.ShowDialog() == DialogResult.OK)
+            try
             {
-                fullname = OpenFileDialog1.FileName.ToString();
+                OpenFileDialog OpenFileDialog1 = new OpenFileDialog();
+                OpenFileDialog1.Filter = "bmp,jpg,gif,png,tiff,icon|*.bmp;*.jpg;*.gif;*.png;*.tiff;*.icon";
+                OpenFileDialog1.Title = "选择图片";
+                if (OpenFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    fullname = OpenFileDialog1.FileName.ToString();
+                }
+
+
+                string ax = scanstep(fullname);
+
+                this.textBox2.Text = ax.ToString();
+
             }
-
-
-            string ax = scanstep(fullname);
-
-            this.textBox2.Text = ax.ToString();
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: 01w22" + ex);
+                throw;
+            }
 
         }
 
@@ -97,7 +106,7 @@ namespace YH_ScanProject
 
             Alist = GetBy_CategoryReportFileName(path);
 
-            label7.Text = "已选中：" + Alist.Count();
+            label7.Text = "已选中文件数：" + Alist.Count();
 
         }
         public List<string> GetBy_CategoryReportFileName(string dirPath)
@@ -125,86 +134,123 @@ namespace YH_ScanProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenFileDialog tbox = new OpenFileDialog();
-            tbox.Multiselect = false;
-            tbox.Filter = "Excel Files(*.xls,*.xlsx,*.xlsm,*.xlsb)|*.xls;*.xlsx;*.xlsm;*.xlsb";
-            if (tbox.ShowDialog() == DialogResult.OK)
+            System.Windows.Forms.FolderBrowserDialog dialog = new System.Windows.Forms.FolderBrowserDialog();
+            dialog.Description = "请选择导出文件夹";
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                Copyfile = tbox.FileName;
-                textBox3.Text = Copyfile;
+                if (string.IsNullOrEmpty(dialog.SelectedPath))
+                {
+                    MessageBox.Show(this, "文件夹路径不能为空", "提示");
+                    return;
+                }
+                exit_path = dialog.SelectedPath;
+                textBox3.Text = dialog.SelectedPath;
+
 
             }
+            else
+                return;
         }
 
         private void importButton_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < Alist.Count; i++)
+            try
             {
-                //GetKEYnfo(path + "\\" + Alist[i]);
+                for (int i = 0; i < Alist.Count; i++)
+                {
+                    //GetKEYnfo(path + "\\" + Alist[i]);
+                    label7.Text = "正在执行：" + i + 1 + "/" + Alist.Count;
 
-                string ax = scanstep(Alist[i]);
+                    string ax = scanstep(Alist[i]);
+                    string filename = System.IO.Path.GetFileName(Alist[i]);
+                    downcsv(ax, filename);
+                }
+
+                MessageBox.Show("下载完成 ！", "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                label7.Text = "已完成";
+
+                //downcsv(dataGridView);
+
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: 0122" + ex);
+                return;
 
-           
-
-            //downcsv(dataGridView);
-
+                throw;
+            }
         }
 
-        public void downcsv(DataGridView dataGridView)
+        public void downcsv(string ax, string filename)
         {
-            if (dataGridView.Rows.Count == 0)
+            string[] dataGridView = System.Text.RegularExpressions.Regex.Split(ax, "\r\n");
+
+            if (dataGridView.Length == 0)
             {
                 MessageBox.Show("Sorry , No Data Output !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            var saveFileDialog = new SaveFileDialog();
-            saveFileDialog.DefaultExt = ".csv";
-            saveFileDialog.Filter = "csv|*.csv";
-            string strFileName = "  下载信息" + "_" + DateTime.Now.ToString("yyyyMMddHHmmss");
-            saveFileDialog.FileName = strFileName;
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+
+            string strFileName = "";
+
+            if (exit_path != "" && exit_path.Length > 0)
             {
-                strFileName = saveFileDialog.FileName.ToString();
+                if (false == System.IO.Directory.Exists(exit_path))
+                {
+                    MessageBox.Show("路径不存在,请重新确认, 谢谢!");
+                    return;
+                }
+               
+                strFileName = exit_path + "\\Export  " + filename + " " + DateTime.Now.ToString("yyyyMMdd-ss") + ".csv";
+
             }
             else
             {
-                return;
+                string strDesktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+                strFileName = strDesktopPath + "\\SystemResults\\Export  " + filename + " " + DateTime.Now.ToString("yyyyMMdd-ss") + ".csv";
+
+                string subPath = strDesktopPath + "/SystemResults/";
+                if (false == System.IO.Directory.Exists(subPath))
+                {
+                    //创建pic文件夹
+                    System.IO.Directory.CreateDirectory(subPath);
+                }
+
             }
+
             FileStream fa = new FileStream(strFileName, FileMode.Create);
             StreamWriter sw = new StreamWriter(fa, Encoding.Unicode);
-            string delimiter = "\t";
+            string delimiter = "\r\n";
             string strHeader = "";
-            for (int i = 0; i < dataGridView.Columns.Count; i++)
-            {
-                strHeader += dataGridView.Columns[i].HeaderText + delimiter;
-            }
-            sw.WriteLine(strHeader);
 
-            //output rows data
-            for (int j = 0; j < dataGridView.Rows.Count; j++)
             {
                 string strRowValue = "";
 
-                for (int k = 0; k < dataGridView.Columns.Count; k++)
+                for (int k = 0; k < dataGridView.Length; k++)
                 {
-                    if (dataGridView.Rows[j].Cells[k].Value != null)
+                    if (dataGridView[k] != null)
                     {
-                        strRowValue += dataGridView.Rows[j].Cells[k].Value.ToString().Replace("\r\n", " ").Replace("\n", "") + delimiter;
+                        strRowValue += dataGridView[k].ToString().Replace("\r\n", " ").Replace("\n", "") + delimiter;
 
 
                     }
                     else
                     {
-                        strRowValue += dataGridView.Rows[j].Cells[k].Value + delimiter;
+                        strRowValue += dataGridView[k] + delimiter;
                     }
                 }
                 sw.WriteLine(strRowValue);
             }
             sw.Close();
             fa.Close();
-            MessageBox.Show("下载完成 ！", "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
 
     }
 }
