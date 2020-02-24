@@ -28,13 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.toolStrip8 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel16 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel17 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel18 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel19 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel20 = new System.Windows.Forms.ToolStripLabel();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.汇总多表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -94,17 +103,25 @@
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.toolStrip8 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel16 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel17 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel18 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel19 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel20 = new System.Windows.Forms.ToolStripLabel();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.toolStrip9 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel21 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel22 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel23 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel24 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel25 = new System.Windows.Forms.ToolStripLabel();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.toolStrip10 = new System.Windows.Forms.ToolStrip();
+            this.toolStripDropDownButton5 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.快速截图ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.选择图片保存路径ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开始准备ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.toolStrip8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -121,9 +138,11 @@
             this.toolStrip6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.toolStrip7.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.toolStrip8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.toolStrip9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            this.toolStrip10.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -132,6 +151,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("微软雅黑", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -152,6 +172,78 @@
             this.tabPage1.Size = new System.Drawing.Size(816, 360);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Excel类表格";
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.toolStrip8, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.dataGridView4, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 28);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 315F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(810, 329);
+            this.tableLayoutPanel4.TabIndex = 7;
+            // 
+            // toolStrip8
+            // 
+            this.toolStrip8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStrip8.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel16,
+            this.toolStripLabel17,
+            this.toolStripLabel18,
+            this.toolStripLabel19,
+            this.toolStripLabel20});
+            this.toolStrip8.Location = new System.Drawing.Point(0, 315);
+            this.toolStrip8.Name = "toolStrip8";
+            this.toolStrip8.Size = new System.Drawing.Size(810, 16);
+            this.toolStrip8.TabIndex = 4;
+            this.toolStrip8.Text = "toolStrip8";
+            // 
+            // toolStripLabel16
+            // 
+            this.toolStripLabel16.Name = "toolStripLabel16";
+            this.toolStripLabel16.Size = new System.Drawing.Size(56, 13);
+            this.toolStripLabel16.Text = "系统信息";
+            // 
+            // toolStripLabel17
+            // 
+            this.toolStripLabel17.Name = "toolStripLabel17";
+            this.toolStripLabel17.Size = new System.Drawing.Size(0, 13);
+            // 
+            // toolStripLabel18
+            // 
+            this.toolStripLabel18.Name = "toolStripLabel18";
+            this.toolStripLabel18.Size = new System.Drawing.Size(0, 13);
+            // 
+            // toolStripLabel19
+            // 
+            this.toolStripLabel19.Name = "toolStripLabel19";
+            this.toolStripLabel19.Size = new System.Drawing.Size(0, 13);
+            // 
+            // toolStripLabel20
+            // 
+            this.toolStripLabel20.Name = "toolStripLabel20";
+            this.toolStripLabel20.Size = new System.Drawing.Size(0, 13);
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowHeadersVisible = false;
+            this.dataGridView4.Size = new System.Drawing.Size(804, 309);
+            this.dataGridView4.TabIndex = 2;
             // 
             // toolStrip1
             // 
@@ -236,34 +328,34 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(56, 19);
+            this.toolStripLabel2.Size = new System.Drawing.Size(56, 13);
             this.toolStripLabel2.Text = "系统信息";
             // 
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(0, 19);
+            this.toolStripLabel3.Size = new System.Drawing.Size(0, 13);
             // 
             // toolStripLabel4
             // 
             this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(0, 19);
+            this.toolStripLabel4.Size = new System.Drawing.Size(0, 13);
             // 
             // toolStripLabel5
             // 
             this.toolStripLabel5.Name = "toolStripLabel5";
-            this.toolStripLabel5.Size = new System.Drawing.Size(0, 19);
+            this.toolStripLabel5.Size = new System.Drawing.Size(0, 13);
             // 
             // toolStripLabel6
             // 
             this.toolStripLabel6.Name = "toolStripLabel6";
-            this.toolStripLabel6.Size = new System.Drawing.Size(0, 19);
+            this.toolStripLabel6.Size = new System.Drawing.Size(0, 13);
             // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -418,34 +510,34 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(56, 19);
+            this.toolStripLabel1.Size = new System.Drawing.Size(56, 13);
             this.toolStripLabel1.Text = "系统信息";
             // 
             // toolStripLabel7
             // 
             this.toolStripLabel7.Name = "toolStripLabel7";
-            this.toolStripLabel7.Size = new System.Drawing.Size(0, 19);
+            this.toolStripLabel7.Size = new System.Drawing.Size(0, 13);
             // 
             // toolStripLabel8
             // 
             this.toolStripLabel8.Name = "toolStripLabel8";
-            this.toolStripLabel8.Size = new System.Drawing.Size(0, 19);
+            this.toolStripLabel8.Size = new System.Drawing.Size(0, 13);
             // 
             // toolStripLabel9
             // 
             this.toolStripLabel9.Name = "toolStripLabel9";
-            this.toolStripLabel9.Size = new System.Drawing.Size(0, 19);
+            this.toolStripLabel9.Size = new System.Drawing.Size(0, 13);
             // 
             // toolStripLabel10
             // 
             this.toolStripLabel10.Name = "toolStripLabel10";
-            this.toolStripLabel10.Size = new System.Drawing.Size(0, 19);
+            this.toolStripLabel10.Size = new System.Drawing.Size(0, 13);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -622,8 +714,8 @@
             // dataGridView3
             // 
             this.dataGridView3.AllowUserToAddRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -650,8 +742,7 @@
             // 
             this.toolStripDropDownButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripDropDownButton4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem6,
-            this.toolStripMenuItem9});
+            this.toolStripMenuItem6});
             this.toolStripDropDownButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton4.Image")));
             this.toolStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton4.Name = "toolStripDropDownButton4";
@@ -681,83 +772,135 @@
             this.toolStripMenuItem8.Text = "开始转换";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
-            // toolStripMenuItem9
+            // tabPage5
             // 
-            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(174, 22);
-            this.toolStripMenuItem9.Text = "单邮箱发送";
+            this.tabPage5.Controls.Add(this.tableLayoutPanel5);
+            this.tabPage5.Controls.Add(this.toolStrip10);
+            this.tabPage5.Location = new System.Drawing.Point(4, 33);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(816, 360);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "其他";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel4
+            // tableLayoutPanel5
             // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.toolStrip8, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.dataGridView4, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 28);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 315F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(810, 329);
-            this.tableLayoutPanel4.TabIndex = 7;
+            this.tableLayoutPanel5.ColumnCount = 1;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Controls.Add(this.toolStrip9, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.dataGridView5, 0, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 28);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 315F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(810, 329);
+            this.tableLayoutPanel5.TabIndex = 8;
             // 
-            // toolStrip8
+            // toolStrip9
             // 
-            this.toolStrip8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStrip8.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel16,
-            this.toolStripLabel17,
-            this.toolStripLabel18,
-            this.toolStripLabel19,
-            this.toolStripLabel20});
-            this.toolStrip8.Location = new System.Drawing.Point(0, 315);
-            this.toolStrip8.Name = "toolStrip8";
-            this.toolStrip8.Size = new System.Drawing.Size(810, 16);
-            this.toolStrip8.TabIndex = 4;
-            this.toolStrip8.Text = "toolStrip8";
+            this.toolStrip9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStrip9.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel21,
+            this.toolStripLabel22,
+            this.toolStripLabel23,
+            this.toolStripLabel24,
+            this.toolStripLabel25});
+            this.toolStrip9.Location = new System.Drawing.Point(0, 315);
+            this.toolStrip9.Name = "toolStrip9";
+            this.toolStrip9.Size = new System.Drawing.Size(810, 16);
+            this.toolStrip9.TabIndex = 4;
+            this.toolStrip9.Text = "toolStrip9";
             // 
-            // toolStripLabel16
+            // toolStripLabel21
             // 
-            this.toolStripLabel16.Name = "toolStripLabel16";
-            this.toolStripLabel16.Size = new System.Drawing.Size(56, 13);
-            this.toolStripLabel16.Text = "系统信息";
+            this.toolStripLabel21.Name = "toolStripLabel21";
+            this.toolStripLabel21.Size = new System.Drawing.Size(56, 13);
+            this.toolStripLabel21.Text = "系统信息";
             // 
-            // toolStripLabel17
+            // toolStripLabel22
             // 
-            this.toolStripLabel17.Name = "toolStripLabel17";
-            this.toolStripLabel17.Size = new System.Drawing.Size(0, 13);
+            this.toolStripLabel22.Name = "toolStripLabel22";
+            this.toolStripLabel22.Size = new System.Drawing.Size(0, 13);
             // 
-            // toolStripLabel18
+            // toolStripLabel23
             // 
-            this.toolStripLabel18.Name = "toolStripLabel18";
-            this.toolStripLabel18.Size = new System.Drawing.Size(0, 13);
+            this.toolStripLabel23.Name = "toolStripLabel23";
+            this.toolStripLabel23.Size = new System.Drawing.Size(0, 13);
             // 
-            // toolStripLabel19
+            // toolStripLabel24
             // 
-            this.toolStripLabel19.Name = "toolStripLabel19";
-            this.toolStripLabel19.Size = new System.Drawing.Size(0, 13);
+            this.toolStripLabel24.Name = "toolStripLabel24";
+            this.toolStripLabel24.Size = new System.Drawing.Size(0, 13);
             // 
-            // toolStripLabel20
+            // toolStripLabel25
             // 
-            this.toolStripLabel20.Name = "toolStripLabel20";
-            this.toolStripLabel20.Size = new System.Drawing.Size(0, 13);
+            this.toolStripLabel25.Name = "toolStripLabel25";
+            this.toolStripLabel25.Size = new System.Drawing.Size(0, 13);
             // 
-            // dataGridView4
+            // dataGridView5
             // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataGridView5.AllowUserToAddRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView5.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersVisible = false;
-            this.dataGridView4.Size = new System.Drawing.Size(804, 309);
-            this.dataGridView4.TabIndex = 2;
+            this.dataGridView5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.RowHeadersVisible = false;
+            this.dataGridView5.Size = new System.Drawing.Size(804, 309);
+            this.dataGridView5.TabIndex = 2;
+            // 
+            // toolStrip10
+            // 
+            this.toolStrip10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.toolStrip10.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripDropDownButton5});
+            this.toolStrip10.Location = new System.Drawing.Point(3, 3);
+            this.toolStrip10.Name = "toolStrip10";
+            this.toolStrip10.Size = new System.Drawing.Size(810, 25);
+            this.toolStrip10.TabIndex = 7;
+            this.toolStrip10.Text = "toolStrip5";
+            // 
+            // toolStripDropDownButton5
+            // 
+            this.toolStripDropDownButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.快速截图ToolStripMenuItem});
+            this.toolStripDropDownButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton5.Image")));
+            this.toolStripDropDownButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton5.Name = "toolStripDropDownButton5";
+            this.toolStripDropDownButton5.Size = new System.Drawing.Size(64, 22);
+            this.toolStripDropDownButton5.Text = "功能区1";
+            // 
+            // 快速截图ToolStripMenuItem
+            // 
+            this.快速截图ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.选择图片保存路径ToolStripMenuItem,
+            this.开始准备ToolStripMenuItem});
+            this.快速截图ToolStripMenuItem.Name = "快速截图ToolStripMenuItem";
+            this.快速截图ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.快速截图ToolStripMenuItem.Text = "快速截图";
+            this.快速截图ToolStripMenuItem.Visible = false;
+            // 
+            // 选择图片保存路径ToolStripMenuItem
+            // 
+            this.选择图片保存路径ToolStripMenuItem.Name = "选择图片保存路径ToolStripMenuItem";
+            this.选择图片保存路径ToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.选择图片保存路径ToolStripMenuItem.Text = "选择图片保存路径";
+            this.选择图片保存路径ToolStripMenuItem.Click += new System.EventHandler(this.选择图片保存路径ToolStripMenuItem_Click);
+            // 
+            // 开始准备ToolStripMenuItem
+            // 
+            this.开始准备ToolStripMenuItem.Name = "开始准备ToolStripMenuItem";
+            this.开始准备ToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.开始准备ToolStripMenuItem.Text = "开始准备";
+            this.开始准备ToolStripMenuItem.Click += new System.EventHandler(this.开始准备ToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -773,6 +916,11 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            this.toolStrip8.ResumeLayout(false);
+            this.toolStrip8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -802,11 +950,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.toolStrip7.ResumeLayout(false);
             this.toolStrip7.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            this.toolStrip8.ResumeLayout(false);
-            this.toolStrip8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            this.toolStrip9.ResumeLayout(false);
+            this.toolStrip9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            this.toolStrip10.ResumeLayout(false);
+            this.toolStrip10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -868,7 +1020,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem 导入数据模板ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 开始转换ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pDF合并ToolStripMenuItem;
@@ -883,5 +1034,19 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel19;
         private System.Windows.Forms.ToolStripLabel toolStripLabel20;
         private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.ToolStrip toolStrip9;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel21;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel22;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel23;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel24;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel25;
+        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.ToolStrip toolStrip10;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton5;
+        private System.Windows.Forms.ToolStripMenuItem 快速截图ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 选择图片保存路径ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开始准备ToolStripMenuItem;
     }
 }

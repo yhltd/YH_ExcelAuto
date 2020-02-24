@@ -16,7 +16,7 @@ using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Collections;
-
+ 
 
 namespace ExcelAddIn1
 {
@@ -699,7 +699,7 @@ namespace ExcelAddIn1
 
                 String[] files = Alist.ToArray();
                 string strDesktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
-                string filename = strDesktopPath + "\\Merge PDF " + DateTime.Now.ToString("yyyyMMdd-ss") + ".pdf";
+                string filename = strDesktopPath + "\\NewCapture " + DateTime.Now.ToString("yyyyMMdd-ss") + ".pdf";
 
 
                 clsBll BusinessHelp = new clsBll();
@@ -746,11 +746,59 @@ namespace ExcelAddIn1
             {
 
             }
-           
+
 
         }
 
+        private void 选择图片保存路径ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.FolderBrowserDialog dialog = new System.Windows.Forms.FolderBrowserDialog();
+            dialog.Description = "请选择所在文件夹";
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                if (string.IsNullOrEmpty(dialog.SelectedPath))
+                {
+                    MessageBox.Show(this, "文件夹路径不能为空", "提示");
+                    return;
+                }
+                path = dialog.SelectedPath;
+            }
+            else
+                return;
+        }
 
+        private void 开始准备ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ScreenCapture BusinessHelp = new ScreenCapture();
+            if (path.Length > 0)
+               //BusinessHelp.CaptureScreen();
+
+                GetScreen1();
+            else
+                MessageBox.Show("请先选择保存的文件夹路径", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+        }
+
+        public void GetScreen1()
+        {
+            //截取屏幕内容   
+            Size screen = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            Bitmap memoryImage = new Bitmap(screen.Width, screen.Height);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            memoryGraphics.CopyFromScreen(0, 0, 0, 0, screen, CopyPixelOperation.MergePaint);
+            //memoryImage
+            //memoryImage.Save(@"screen.jpg",ImageFormat.Jpeg);
+            MemoryStream data = new MemoryStream();
+            memoryImage.Save(data, ImageFormat.Png);
+
+
+            //string strDesktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+            // path
+            string filename = path + "\\pic " + DateTime.Now.ToString("yyyyMMdd-ss") + ".png";
+
+            memoryImage.Save(filename, ImageFormat.Png);
+        }
 
     }
 }
