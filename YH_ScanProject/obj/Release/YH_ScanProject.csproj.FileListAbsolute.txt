@@ -1,1 +1,10 @@
 C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\bin\Release\YH_ScanProject.exe.config
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\bin\Release\YH_ScanProject.exe
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\bin\Release\YH_ScanProject.pdb
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\bin\Release\AipSdk.dll
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\bin\Release\Newtonsoft.Json.dll
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Release\YH_ScanProject.frmmain.resources
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Release\YH_ScanProject.Properties.Resources.resources
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Release\YH_ScanProject.csproj.GenerateResource.Cache
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Release\YH_ScanProject.exe
+C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Release\YH_ScanProject.pdb
