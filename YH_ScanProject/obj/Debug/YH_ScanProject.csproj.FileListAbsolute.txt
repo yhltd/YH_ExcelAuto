@@ -9,3 +9,14 @@ C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.Properties.Re
 C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.csproj.GenerateResource.Cache
 C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.exe
 C:\bake40mypc\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.pdb
+D:\git_version\YH_ExcelAuto\YH_ScanProject\bin\Debug\YH_ScanProject.exe.config
+D:\git_version\YH_ExcelAuto\YH_ScanProject\bin\Debug\YH_ScanProject.exe
+D:\git_version\YH_ExcelAuto\YH_ScanProject\bin\Debug\YH_ScanProject.pdb
+D:\git_version\YH_ExcelAuto\YH_ScanProject\bin\Debug\AipSdk.dll
+D:\git_version\YH_ExcelAuto\YH_ScanProject\bin\Debug\Newtonsoft.Json.dll
+D:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.csprojResolveAssemblyReference.cache
+D:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.frmmain.resources
+D:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.Properties.Resources.resources
+D:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.csproj.GenerateResource.Cache
+D:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.exe
+D:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.pdb

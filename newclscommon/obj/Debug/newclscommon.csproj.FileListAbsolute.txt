@@ -26,3 +26,10 @@ C:\bake40mypc\YH_ExcelAuto\newclscommon\bin\Debug\dblist.pdb
 C:\bake40mypc\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.csprojResolveAssemblyReference.cache
 C:\bake40mypc\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.dll
 C:\bake40mypc\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.pdb
+D:\git_version\YH_ExcelAuto\newclscommon\bin\Debug\newclscommon.dll
+D:\git_version\YH_ExcelAuto\newclscommon\bin\Debug\newclscommon.pdb
+D:\git_version\YH_ExcelAuto\newclscommon\bin\Debug\dblist.dll
+D:\git_version\YH_ExcelAuto\newclscommon\bin\Debug\dblist.pdb
+D:\git_version\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.csprojResolveAssemblyReference.cache
+D:\git_version\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.dll
+D:\git_version\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.pdb

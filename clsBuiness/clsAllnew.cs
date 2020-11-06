@@ -24,6 +24,8 @@ namespace clsBuiness
         public ToolStripStatusLabel tsStatusLabel1 { get; set; }
         public BackgroundWorker backgroundWorker1;
         public List<clsFenbiaoInfo> FenbiaoInfo;
+        //private Microsoft.Office.Interop.Outlook.ApplicationClass appCls;
+        private Microsoft.Office.Interop.Outlook.NameSpace mySpace;
         private string fullPath;
         int nofindoutlooksendmail;
 
@@ -231,13 +233,13 @@ namespace clsBuiness
                 catch (Exception ex)
                 {
                     MessageBox.Show("错误 POP3设置授权码不正确，请重新确认" + ex.Message, "系统", MessageBoxButtons.OK, MessageBoxIcon.Error);
-               
+
                     // this.lbMessage.Text = "Send Email Failed." + ex.ToString();
                 }
             }
         }
 
-        public bool outllook_moban_Send(string Hosti, string fromi, string passkey, string toi, string Subjecti, string Bodyi, string[] Attachmentlist, string msgpath)
+        public bool outllook_moban_Send(string Hosti, string fromi, string passkey, string toi, string Subjecti, string Bodyi, string[] Attachmentlist, string msgpath, int ischange_bodymsg)
         {
 
             try
@@ -259,18 +261,104 @@ namespace clsBuiness
                     var nne = names.SmtpAddress;
                     if (nne.Contains(fromi.ToLower()))
                     {
-                        var objMail = olApp.CreateItemFromTemplate(msgpath);
+                        if (ischange_bodymsg == 0)//如果仅是发送msg模板
+                        {
+                            var objMail = olApp.CreateItemFromTemplate(msgpath);
 
-                        objMail.To = toi;
+                            objMail.To = toi;
 
-                        objMail.Subject = Subjecti;
+                            objMail.Subject = Subjecti;
 
-                        ((Outlook._MailItem)objMail).Send();
+                            ((Outlook._MailItem)objMail).Send();
 
-                        objMail = null;
-                        olApp = null;
-                        issend = true;
-                        return true;
+                            objMail = null;
+                            olApp = null;
+                            issend = true;
+                            return true;
+                        }
+                        else if (ischange_bodymsg == 1)//如果发送msg模板但要更改其内容 标题等等
+                        {
+                            if (msgpath != null && msgpath.Length > 0)
+                            {
+                                var objMail = olApp.CreateItemFromTemplate(msgpath);
+
+                                objMail.To = toi;
+
+                                objMail.Subject = Subjecti;
+                                //  objMail.Body = objMail.Body.Replace("www.yhocn.com", "www.yhocn.cn");
+
+                                object Nothing = System.Reflection.Missing.Value;
+                                //  objMail.Display(Nothing);
+                               // objMail.HTMLBody = objMail.HTMLBody.Replace("www.yhocn.com", "www.yhocn.cn");
+                                // objMail.HTMLBody.Replace("www.yhocn.com", "www.yhocn.cn");
+                               // objMail.HTMLBody = objMail.HTMLBody.Replace("可为大连周边的客户提供上门服务", "为全国客户服务");
+
+
+                                //此功能是 将msg 的内容进行替换， 切割符号为 #  ，必须替换次数为键值对，且如果字符间有数字要单个隔开如下
+                                 //例子高新园区爱贤街##10##号设计城#北京大连都有分部#www.yhocn.com#www.yhocn.cn#可为大连周边的客户提供上门服务#为全国客户服务
+                                string[] fileText = System.Text.RegularExpressions.Regex.Split(Bodyi, "#");
+                                if (fileText.Length > 1)
+                                {
+                                    for (int ii = 0; ii <  fileText.Length; ii = ii + 2)
+                                    {
+                                        if (fileText.Length>=ii+1)
+                                        objMail.HTMLBody = objMail.HTMLBody.Replace(fileText[ii], fileText[ii+1]);
+                                    }
+
+                                }
+
+
+                                ((Outlook._MailItem)objMail).Send();
+
+                                objMail = null;
+                                olApp = null;
+                                issend = true;
+                                return true;
+
+                            }
+                            else
+                            {
+                                System.Globalization.CultureInfo CurrentCI = System.Threading.Thread.CurrentThread.CurrentCulture;
+                                System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+                                //appCls = new Outlook.ApplicationClass();
+                                mySpace = olApp.GetNamespace("MAPI");
+                                Outlook.MailItem item = olApp.CreateItem(Outlook.OlItemType.olMailItem) as Outlook.MailItem;
+                                Outlook.MailItem Item = null;
+                                item.BodyFormat = Microsoft.Office.Interop.Outlook.OlBodyFormat.olFormatRichText;
+
+                                item.To = toi;
+                                //item.CC = "lewis@yhocn.cn;512250428@qq.com";
+                                item.Subject = Subjecti;
+
+                                string mailValue = "OES、FOM各位\r\nお疲れ様です。\r\n\r\n本日確定のBC納期入力が完了しました。\r\nBC案件の標準外に関してご確認をお願いいたします。";
+                                string mailvalue2 = "\r\n\r\n黄色：納期確定\r\n赤色：未確定\r\n塗り潰し無し：納期入力なし\r\n\r\n以上、よろしく御願い致します。";
+
+                                if (Attachmentlist != null)
+                                {
+                                    for (int ii = 0; i < Attachmentlist.Length; i++)
+                                    {
+                                        if (Attachmentlist[ii] != "")
+                                        {
+                                            FileStream fs = new FileStream(@Attachmentlist[ii], FileMode.Open);
+                                            StreamReader sr = new StreamReader(fs);
+                                            string strcontent = sr.ReadToEnd();
+                                            item.Attachments.Add(@Attachmentlist[ii], Outlook.OlAttachmentType.olOLE,
+                                                     1, "fg");
+
+                                        }
+                                    }
+                                }
+                                //   item.Body = mailValue + mailvalue2 + "\r\n";
+                                item.Body = Bodyi;
+
+                                object Nothing = System.Reflection.Missing.Value;
+                                item.Display(Nothing);
+                                //  item.Send();
+                                olApp = null;
+                                issend = true;
+                                return true;
+                            }
+                        }
                     }
 
                 }
@@ -297,7 +385,7 @@ namespace clsBuiness
             }
             catch (Exception ex)
             {
-                MessageBox.Show("错误" + ex.Message,"系统",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("错误" + ex.Message, "系统", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
                 throw;
             }

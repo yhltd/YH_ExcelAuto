@@ -335,8 +335,15 @@ namespace ExcelAutoMAIL
                     BusinessHelp.SendMail_Allport(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText, item.msg_tel);
                 else
 
-                    BusinessHelp.outllook_moban_Send(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText, item.msg_tel);
-
+                    if (item.bodyinfo != null && item.bodyinfo.Length > 0)//如果调用msg模板还要修改其中内容执行
+                    {
+                        BusinessHelp.outllook_moban_Send(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText, item.msg_tel, 1);
+                    }
+                    else
+                    {
+                        //仅是调用msg模板发信直接
+                        BusinessHelp.outllook_moban_Send(item.host, item.sendfrom, item.password, item.sendto, item.subject, item.bodyinfo, fileText, item.msg_tel, 0);
+                    }
                 index++;
             }
             MessageBox.Show("运行结束，已发送邮件：  " + (index - 1).ToString());

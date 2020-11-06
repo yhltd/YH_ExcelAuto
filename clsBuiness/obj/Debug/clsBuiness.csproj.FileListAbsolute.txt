@@ -44,3 +44,16 @@ C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Debug\newclscommon.pdb
 C:\bake40mypc\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.csprojResolveAssemblyReference.cache
 C:\bake40mypc\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.dll
 C:\bake40mypc\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.pdb
+D:\git_version\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.csprojResolveAssemblyReference.cache
+D:\git_version\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.pdb
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\clsBuiness.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\clsBuiness.pdb
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\dblist.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\itextsharp.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\newclscommon.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\Spire.Doc.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\Spire.License.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\MySql.Data.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\dblist.pdb
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\newclscommon.pdb
