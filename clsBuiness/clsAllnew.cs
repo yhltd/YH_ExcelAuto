@@ -278,7 +278,7 @@ namespace clsBuiness
                         }
                         else if (ischange_bodymsg == 1)//如果发送msg模板但要更改其内容 标题等等
                         {
-                            if (msgpath != null && msgpath.Length > 0)
+                            if (msgpath != null && msgpath.Length > 1)
                             {
                                 var objMail = olApp.CreateItemFromTemplate(msgpath);
 
@@ -289,20 +289,20 @@ namespace clsBuiness
 
                                 object Nothing = System.Reflection.Missing.Value;
                                 //  objMail.Display(Nothing);
-                               // objMail.HTMLBody = objMail.HTMLBody.Replace("www.yhocn.com", "www.yhocn.cn");
+                                // objMail.HTMLBody = objMail.HTMLBody.Replace("www.yhocn.com", "www.yhocn.cn");
                                 // objMail.HTMLBody.Replace("www.yhocn.com", "www.yhocn.cn");
-                               // objMail.HTMLBody = objMail.HTMLBody.Replace("可为大连周边的客户提供上门服务", "为全国客户服务");
+                                // objMail.HTMLBody = objMail.HTMLBody.Replace("可为大连周边的客户提供上门服务", "为全国客户服务");
 
 
                                 //此功能是 将msg 的内容进行替换， 切割符号为 #  ，必须替换次数为键值对，且如果字符间有数字要单个隔开如下
-                                 //例子高新园区爱贤街##10##号设计城#北京大连都有分部#www.yhocn.com#www.yhocn.cn#可为大连周边的客户提供上门服务#为全国客户服务
+                                //例子高新园区爱贤街##10##号设计城#北京大连都有分部#www.yhocn.com#www.yhocn.cn#可为大连周边的客户提供上门服务#为全国客户服务
                                 string[] fileText = System.Text.RegularExpressions.Regex.Split(Bodyi, "#");
                                 if (fileText.Length > 1)
                                 {
-                                    for (int ii = 0; ii <  fileText.Length; ii = ii + 2)
+                                    for (int ii = 0; ii < fileText.Length; ii = ii + 2)
                                     {
-                                        if (fileText.Length>=ii+1)
-                                        objMail.HTMLBody = objMail.HTMLBody.Replace(fileText[ii], fileText[ii+1]);
+                                        if (fileText.Length >= ii + 1)
+                                            objMail.HTMLBody = objMail.HTMLBody.Replace(fileText[ii], fileText[ii + 1]);
                                     }
 
                                 }
@@ -352,8 +352,8 @@ namespace clsBuiness
                                 item.Body = Bodyi;
 
                                 object Nothing = System.Reflection.Missing.Value;
-                                item.Display(Nothing);
-                                //  item.Send();
+                                // item.Display(Nothing);
+                                item.Send();
                                 olApp = null;
                                 issend = true;
                                 return true;

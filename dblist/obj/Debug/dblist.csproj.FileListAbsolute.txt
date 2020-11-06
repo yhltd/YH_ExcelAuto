@@ -18,6 +18,5 @@ C:\bake40mypc\YH_ExcelAuto\dblist\obj\Debug\dblist.dll
 C:\bake40mypc\YH_ExcelAuto\dblist\obj\Debug\dblist.pdb
 D:\git_version\YH_ExcelAuto\dblist\bin\Debug\dblist.dll
 D:\git_version\YH_ExcelAuto\dblist\bin\Debug\dblist.pdb
-D:\git_version\YH_ExcelAuto\dblist\obj\Debug\dblist.csprojResolveAssemblyReference.cache
 D:\git_version\YH_ExcelAuto\dblist\obj\Debug\dblist.dll
 D:\git_version\YH_ExcelAuto\dblist\obj\Debug\dblist.pdb

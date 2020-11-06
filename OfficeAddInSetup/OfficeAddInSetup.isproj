@@ -31,10 +31,5 @@
 	<ItemGroup/>
 	<ItemGroup/>
 	<ItemGroup/>
-	<ItemGroup>
-		<ProjectReference Include="..\测试功能专用\测试功能专用.csproj">
-			<Name>测试功能专用</Name>
-			<Project>{3FDCDCD1-1677-4161-830F-9BC1270767DB}</Project>
-		</ProjectReference>
-	</ItemGroup>
+	<ItemGroup/>
 </Project>

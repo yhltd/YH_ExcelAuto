@@ -25,3 +25,12 @@ C:\bake40mypc\YH_ExcelAuto\newclscommon\bin\Release\dblist.pdb
 C:\bake40mypc\YH_ExcelAuto\newclscommon\obj\Release\newclscommon.csprojResolveAssemblyReference.cache
 C:\bake40mypc\YH_ExcelAuto\newclscommon\obj\Release\newclscommon.dll
 C:\bake40mypc\YH_ExcelAuto\newclscommon\obj\Release\newclscommon.pdb
+D:\git_version\YH_ExcelAuto\newclscommon\bin\Release\newclscommon.dll
+D:\git_version\YH_ExcelAuto\newclscommon\bin\Release\newclscommon.pdb
+D:\git_version\YH_ExcelAuto\newclscommon\bin\Release\dblist.dll
+D:\git_version\YH_ExcelAuto\newclscommon\bin\Release\MySql.Data.dll
+D:\git_version\YH_ExcelAuto\newclscommon\bin\Release\MySql.Data.Entity.dll
+D:\git_version\YH_ExcelAuto\newclscommon\bin\Release\dblist.pdb
+D:\git_version\YH_ExcelAuto\newclscommon\obj\Release\newclscommon.csprojResolveAssemblyReference.cache
+D:\git_version\YH_ExcelAuto\newclscommon\obj\Release\newclscommon.dll
+D:\git_version\YH_ExcelAuto\newclscommon\obj\Release\newclscommon.pdb

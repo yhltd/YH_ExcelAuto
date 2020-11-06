@@ -35,3 +35,16 @@ C:\bake40mypc\YH_ExcelAuto\clsBuiness\bin\Release\newclscommon.pdb
 C:\bake40mypc\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.csprojResolveAssemblyReference.cache
 C:\bake40mypc\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.dll
 C:\bake40mypc\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.pdb
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Release\clsBuiness.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Release\clsBuiness.pdb
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Release\dblist.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Release\itextsharp.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Release\newclscommon.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Release\Spire.Doc.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Release\Spire.License.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Release\MySql.Data.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Release\dblist.pdb
+D:\git_version\YH_ExcelAuto\clsBuiness\bin\Release\newclscommon.pdb
+D:\git_version\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.csprojResolveAssemblyReference.cache
+D:\git_version\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.dll
+D:\git_version\YH_ExcelAuto\clsBuiness\obj\Release\clsBuiness.pdb

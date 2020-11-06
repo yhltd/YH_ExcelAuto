@@ -16,9 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clsBuiness", "clsBuiness\clsBuiness.csproj", "{6EE714D1-8868-4689-9B52-0768BA8F896F}"
 EndProject
 Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "OfficeAddInSetup", "OfficeAddInSetup\OfficeAddInSetup.isproj", "{B99F4289-E236-4DCC-9824-BB1372B5AD8D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{3FDCDCD1-1677-4161-830F-9BC1270767DB} = {3FDCDCD1-1677-4161-830F-9BC1270767DB}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YH_ScanProject", "YH_ScanProject\YH_ScanProject.csproj", "{2094C2FE-7D6D-4844-ADA9-6009D51FC384}"
 EndProject
