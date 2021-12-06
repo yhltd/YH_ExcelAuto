@@ -13,7 +13,9 @@ namespace newclscommon
     public class NewMySqlHelper
     {
         
-        private static string connstr = "server=" + "yhruanjian.top" + ";user=root;password=Lyh07910;database=soft_time;Convert Zero Datetime=True;Allow Zero Datetime=True;default command timeout=30;Connection Timeout=600";//根据自己的实际
+        private static string connstr = "server=" + "yhocn.com" + ";user=root;password=Lyh07910;database=soft_time;Convert Zero Datetime=True;Allow Zero Datetime=True;default command timeout=30;Connection Timeout=600";//根据自己的实际
+        //yhruanjian.top 原域名地址 20211206访问不通 变更为yhocn.com
+
 
         public MySqlCommand newcmd;
         public MySqlConnection newconnection;
