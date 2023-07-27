@@ -33,3 +33,10 @@ D:\git_version\YH_ExcelAuto\newclscommon\bin\Debug\dblist.pdb
 D:\git_version\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.csprojResolveAssemblyReference.cache
 D:\git_version\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.dll
 D:\git_version\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.pdb
+F:\git_version\YH_ExcelAuto\newclscommon\bin\Debug\newclscommon.dll
+F:\git_version\YH_ExcelAuto\newclscommon\bin\Debug\newclscommon.pdb
+F:\git_version\YH_ExcelAuto\newclscommon\bin\Debug\dblist.dll
+F:\git_version\YH_ExcelAuto\newclscommon\bin\Debug\dblist.pdb
+F:\git_version\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.csprojResolveAssemblyReference.cache
+F:\git_version\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.dll
+F:\git_version\YH_ExcelAuto\newclscommon\obj\Debug\newclscommon.pdb

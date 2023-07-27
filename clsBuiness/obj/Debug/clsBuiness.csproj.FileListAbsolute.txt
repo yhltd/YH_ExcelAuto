@@ -57,3 +57,17 @@ D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\Spire.License.dll
 D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\MySql.Data.dll
 D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\dblist.pdb
 D:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\newclscommon.pdb
+F:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\clsBuiness.dll
+F:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\clsBuiness.pdb
+F:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\dblist.dll
+F:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\itextsharp.dll
+F:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\newclscommon.dll
+F:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\Spire.Doc.dll
+F:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\Spire.License.dll
+F:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\MySql.Data.dll
+F:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\dblist.pdb
+F:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\newclscommon.pdb
+F:\git_version\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.csprojResolveAssemblyReference.cache
+F:\git_version\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.dll
+F:\git_version\YH_ExcelAuto\clsBuiness\obj\Debug\clsBuiness.pdb
+F:\git_version\YH_ExcelAuto\clsBuiness\bin\Debug\RestSharp.dll

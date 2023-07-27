@@ -42,3 +42,12 @@ D:\git_version\YH_ExcelAuto\catch_mess_spy++\obj\Debug\catch_mess_spy__.Properti
 D:\git_version\YH_ExcelAuto\catch_mess_spy++\obj\Debug\catch_mess_spy++.csproj.GenerateResource.Cache
 D:\git_version\YH_ExcelAuto\catch_mess_spy++\obj\Debug\catch_mess_spy++.exe
 D:\git_version\YH_ExcelAuto\catch_mess_spy++\obj\Debug\catch_mess_spy++.pdb
+F:\git_version\YH_ExcelAuto\catch_mess_spy++\bin\Debug\catch_mess_spy++.exe.config
+F:\git_version\YH_ExcelAuto\catch_mess_spy++\bin\Debug\catch_mess_spy++.exe
+F:\git_version\YH_ExcelAuto\catch_mess_spy++\bin\Debug\catch_mess_spy++.pdb
+F:\git_version\YH_ExcelAuto\catch_mess_spy++\obj\Debug\catch_mess_spy++.csprojResolveAssemblyReference.cache
+F:\git_version\YH_ExcelAuto\catch_mess_spy++\obj\Debug\catch_mess_spy__.Form1.resources
+F:\git_version\YH_ExcelAuto\catch_mess_spy++\obj\Debug\catch_mess_spy__.Properties.Resources.resources
+F:\git_version\YH_ExcelAuto\catch_mess_spy++\obj\Debug\catch_mess_spy++.csproj.GenerateResource.Cache
+F:\git_version\YH_ExcelAuto\catch_mess_spy++\obj\Debug\catch_mess_spy++.exe
+F:\git_version\YH_ExcelAuto\catch_mess_spy++\obj\Debug\catch_mess_spy++.pdb

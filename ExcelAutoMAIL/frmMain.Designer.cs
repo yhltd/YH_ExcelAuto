@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -103,6 +104,30 @@
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.toolStrip12 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel26 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel27 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel28 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel29 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel30 = new System.Windows.Forms.ToolStripLabel();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.toolStrip11 = new System.Windows.Forms.ToolStrip();
+            this.toolStripDropDownButton6 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.图像无损放大ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开始转换ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.图像对比度增强ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开始转换ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.图像修复ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开始转换ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.图像色彩增强ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开始转换ToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.文档图片去底纹ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开始转换ToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.图像去噪ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开始转换ToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip9 = new System.Windows.Forms.ToolStrip();
@@ -117,6 +142,8 @@
             this.快速截图ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.选择图片保存路径ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.开始准备ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.图像去雾ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开始转换ToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -138,6 +165,10 @@
             this.toolStrip6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.toolStrip7.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.toolStrip12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            this.toolStrip11.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.toolStrip9.SuspendLayout();
@@ -151,9 +182,10 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("微软雅黑", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -165,7 +197,7 @@
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.tabPage1.Controls.Add(this.tableLayoutPanel4);
             this.tabPage1.Controls.Add(this.toolStrip1);
-            this.tabPage1.Font = new System.Drawing.Font("宋体", 11F);
+            this.tabPage1.Font = new System.Drawing.Font("SimSun", 11F);
             this.tabPage1.Location = new System.Drawing.Point(4, 33);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -232,8 +264,8 @@
             // dataGridView4
             // 
             this.dataGridView4.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -286,7 +318,7 @@
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel1);
             this.tabPage2.Controls.Add(this.toolStrip2);
-            this.tabPage2.Font = new System.Drawing.Font("宋体", 11F);
+            this.tabPage2.Font = new System.Drawing.Font("SimSun", 11F);
             this.tabPage2.Location = new System.Drawing.Point(4, 33);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -354,8 +386,8 @@
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -468,7 +500,7 @@
             // 
             this.tabPage3.Controls.Add(this.tableLayoutPanel2);
             this.tabPage3.Controls.Add(this.toolStrip5);
-            this.tabPage3.Font = new System.Drawing.Font("宋体", 11F);
+            this.tabPage3.Font = new System.Drawing.Font("SimSun", 11F);
             this.tabPage3.Location = new System.Drawing.Point(4, 33);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -536,8 +568,8 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -646,7 +678,7 @@
             // 
             this.tabPage4.Controls.Add(this.tableLayoutPanel3);
             this.tabPage4.Controls.Add(this.toolStrip7);
-            this.tabPage4.Font = new System.Drawing.Font("宋体", 11F);
+            this.tabPage4.Font = new System.Drawing.Font("SimSun", 11F);
             this.tabPage4.Location = new System.Drawing.Point(4, 33);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -714,8 +746,8 @@
             // dataGridView3
             // 
             this.dataGridView3.AllowUserToAddRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -771,6 +803,210 @@
             this.toolStripMenuItem8.Size = new System.Drawing.Size(148, 22);
             this.toolStripMenuItem8.Text = "开始转换";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.toolStrip12);
+            this.tabPage6.Controls.Add(this.dataGridView6);
+            this.tabPage6.Controls.Add(this.toolStrip11);
+            this.tabPage6.Location = new System.Drawing.Point(4, 33);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(816, 360);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "图片处理";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // toolStrip12
+            // 
+            this.toolStrip12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStrip12.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel26,
+            this.toolStripLabel27,
+            this.toolStripLabel28,
+            this.toolStripLabel29,
+            this.toolStripLabel30});
+            this.toolStrip12.Location = new System.Drawing.Point(3, 332);
+            this.toolStrip12.Name = "toolStrip12";
+            this.toolStrip12.Size = new System.Drawing.Size(810, 25);
+            this.toolStrip12.TabIndex = 8;
+            this.toolStrip12.Text = "toolStrip12";
+            // 
+            // toolStripLabel26
+            // 
+            this.toolStripLabel26.Name = "toolStripLabel26";
+            this.toolStripLabel26.Size = new System.Drawing.Size(56, 22);
+            this.toolStripLabel26.Text = "系统信息";
+            // 
+            // toolStripLabel27
+            // 
+            this.toolStripLabel27.Name = "toolStripLabel27";
+            this.toolStripLabel27.Size = new System.Drawing.Size(0, 22);
+            // 
+            // toolStripLabel28
+            // 
+            this.toolStripLabel28.Name = "toolStripLabel28";
+            this.toolStripLabel28.Size = new System.Drawing.Size(0, 22);
+            // 
+            // toolStripLabel29
+            // 
+            this.toolStripLabel29.Name = "toolStripLabel29";
+            this.toolStripLabel29.Size = new System.Drawing.Size(0, 22);
+            // 
+            // toolStripLabel30
+            // 
+            this.toolStripLabel30.Name = "toolStripLabel30";
+            this.toolStripLabel30.Size = new System.Drawing.Size(0, 22);
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.AllowUserToAddRows = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView6.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(6, 26);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.RowHeadersVisible = false;
+            this.dataGridView6.Size = new System.Drawing.Size(804, 309);
+            this.dataGridView6.TabIndex = 7;
+            // 
+            // toolStrip11
+            // 
+            this.toolStrip11.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.toolStrip11.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripDropDownButton6});
+            this.toolStrip11.Location = new System.Drawing.Point(3, 3);
+            this.toolStrip11.Name = "toolStrip11";
+            this.toolStrip11.Size = new System.Drawing.Size(810, 25);
+            this.toolStrip11.TabIndex = 6;
+            this.toolStrip11.Text = "toolStrip5";
+            // 
+            // toolStripDropDownButton6
+            // 
+            this.toolStripDropDownButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton6.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem9,
+            this.图像无损放大ToolStripMenuItem,
+            this.图像对比度增强ToolStripMenuItem,
+            this.图像修复ToolStripMenuItem,
+            this.图像色彩增强ToolStripMenuItem,
+            this.文档图片去底纹ToolStripMenuItem,
+            this.图像去噪ToolStripMenuItem,
+            this.图像去雾ToolStripMenuItem});
+            this.toolStripDropDownButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton6.Image")));
+            this.toolStripDropDownButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton6.Name = "toolStripDropDownButton6";
+            this.toolStripDropDownButton6.Size = new System.Drawing.Size(64, 22);
+            this.toolStripDropDownButton6.Text = "功能区1";
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem11});
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(184, 22);
+            this.toolStripMenuItem9.Text = "图像增强与特效";
+            // 
+            // toolStripMenuItem11
+            // 
+            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(124, 22);
+            this.toolStripMenuItem11.Text = "开始转换";
+            this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
+            // 
+            // 图像无损放大ToolStripMenuItem
+            // 
+            this.图像无损放大ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.开始转换ToolStripMenuItem1});
+            this.图像无损放大ToolStripMenuItem.Name = "图像无损放大ToolStripMenuItem";
+            this.图像无损放大ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.图像无损放大ToolStripMenuItem.Text = "图像无损放大";
+            // 
+            // 开始转换ToolStripMenuItem1
+            // 
+            this.开始转换ToolStripMenuItem1.Name = "开始转换ToolStripMenuItem1";
+            this.开始转换ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
+            this.开始转换ToolStripMenuItem1.Text = "开始转换";
+            this.开始转换ToolStripMenuItem1.Click += new System.EventHandler(this.开始转换ToolStripMenuItem1_Click);
+            // 
+            // 图像对比度增强ToolStripMenuItem
+            // 
+            this.图像对比度增强ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.开始转换ToolStripMenuItem2});
+            this.图像对比度增强ToolStripMenuItem.Name = "图像对比度增强ToolStripMenuItem";
+            this.图像对比度增强ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.图像对比度增强ToolStripMenuItem.Text = "图像对比度增强";
+            // 
+            // 开始转换ToolStripMenuItem2
+            // 
+            this.开始转换ToolStripMenuItem2.Name = "开始转换ToolStripMenuItem2";
+            this.开始转换ToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
+            this.开始转换ToolStripMenuItem2.Text = "开始转换";
+            this.开始转换ToolStripMenuItem2.Click += new System.EventHandler(this.开始转换ToolStripMenuItem2_Click);
+            // 
+            // 图像修复ToolStripMenuItem
+            // 
+            this.图像修复ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.开始转换ToolStripMenuItem3});
+            this.图像修复ToolStripMenuItem.Name = "图像修复ToolStripMenuItem";
+            this.图像修复ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.图像修复ToolStripMenuItem.Text = "图像修复（暂时不）";
+            // 
+            // 开始转换ToolStripMenuItem3
+            // 
+            this.开始转换ToolStripMenuItem3.Name = "开始转换ToolStripMenuItem3";
+            this.开始转换ToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.开始转换ToolStripMenuItem3.Text = "开始转换";
+            this.开始转换ToolStripMenuItem3.Click += new System.EventHandler(this.开始转换ToolStripMenuItem3_Click);
+            // 
+            // 图像色彩增强ToolStripMenuItem
+            // 
+            this.图像色彩增强ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.开始转换ToolStripMenuItem4});
+            this.图像色彩增强ToolStripMenuItem.Name = "图像色彩增强ToolStripMenuItem";
+            this.图像色彩增强ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.图像色彩增强ToolStripMenuItem.Text = "图像色彩增强";
+            // 
+            // 开始转换ToolStripMenuItem4
+            // 
+            this.开始转换ToolStripMenuItem4.Name = "开始转换ToolStripMenuItem4";
+            this.开始转换ToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.开始转换ToolStripMenuItem4.Text = "开始转换";
+            this.开始转换ToolStripMenuItem4.Click += new System.EventHandler(this.开始转换ToolStripMenuItem4_Click);
+            // 
+            // 文档图片去底纹ToolStripMenuItem
+            // 
+            this.文档图片去底纹ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.开始转换ToolStripMenuItem5});
+            this.文档图片去底纹ToolStripMenuItem.Name = "文档图片去底纹ToolStripMenuItem";
+            this.文档图片去底纹ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.文档图片去底纹ToolStripMenuItem.Text = "文档图片去底纹";
+            // 
+            // 开始转换ToolStripMenuItem5
+            // 
+            this.开始转换ToolStripMenuItem5.Name = "开始转换ToolStripMenuItem5";
+            this.开始转换ToolStripMenuItem5.Size = new System.Drawing.Size(124, 22);
+            this.开始转换ToolStripMenuItem5.Text = "开始转换";
+            this.开始转换ToolStripMenuItem5.Click += new System.EventHandler(this.开始转换ToolStripMenuItem5_Click);
+            // 
+            // 图像去噪ToolStripMenuItem
+            // 
+            this.图像去噪ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.开始转换ToolStripMenuItem6});
+            this.图像去噪ToolStripMenuItem.Name = "图像去噪ToolStripMenuItem";
+            this.图像去噪ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.图像去噪ToolStripMenuItem.Text = "图像去噪";
+            // 
+            // 开始转换ToolStripMenuItem6
+            // 
+            this.开始转换ToolStripMenuItem6.Name = "开始转换ToolStripMenuItem6";
+            this.开始转换ToolStripMenuItem6.Size = new System.Drawing.Size(152, 22);
+            this.开始转换ToolStripMenuItem6.Text = "开始转换";
+            this.开始转换ToolStripMenuItem6.Click += new System.EventHandler(this.开始转换ToolStripMenuItem6_Click);
             // 
             // tabPage5
             // 
@@ -843,8 +1079,8 @@
             // dataGridView5
             // 
             this.dataGridView5.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView5.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView5.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -884,7 +1120,7 @@
             this.选择图片保存路径ToolStripMenuItem,
             this.开始准备ToolStripMenuItem});
             this.快速截图ToolStripMenuItem.Name = "快速截图ToolStripMenuItem";
-            this.快速截图ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.快速截图ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.快速截图ToolStripMenuItem.Text = "快速截图";
             this.快速截图ToolStripMenuItem.Visible = false;
             // 
@@ -901,6 +1137,21 @@
             this.开始准备ToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.开始准备ToolStripMenuItem.Text = "开始准备";
             this.开始准备ToolStripMenuItem.Click += new System.EventHandler(this.开始准备ToolStripMenuItem_Click);
+            // 
+            // 图像去雾ToolStripMenuItem
+            // 
+            this.图像去雾ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.开始转换ToolStripMenuItem7});
+            this.图像去雾ToolStripMenuItem.Name = "图像去雾ToolStripMenuItem";
+            this.图像去雾ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.图像去雾ToolStripMenuItem.Text = "图像去雾";
+            // 
+            // 开始转换ToolStripMenuItem7
+            // 
+            this.开始转换ToolStripMenuItem7.Name = "开始转换ToolStripMenuItem7";
+            this.开始转换ToolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
+            this.开始转换ToolStripMenuItem7.Text = "开始转换";
+            this.开始转换ToolStripMenuItem7.Click += new System.EventHandler(this.开始转换ToolStripMenuItem7_Click);
             // 
             // frmMain
             // 
@@ -950,6 +1201,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.toolStrip7.ResumeLayout(false);
             this.toolStrip7.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.toolStrip12.ResumeLayout(false);
+            this.toolStrip12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            this.toolStrip11.ResumeLayout(false);
+            this.toolStrip11.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
@@ -1048,5 +1306,31 @@
         private System.Windows.Forms.ToolStripMenuItem 快速截图ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 选择图片保存路径ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 开始准备ToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.ToolStrip toolStrip12;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel26;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel27;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel28;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel29;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel30;
+        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.ToolStrip toolStrip11;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton6;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
+        private System.Windows.Forms.ToolStripMenuItem 图像无损放大ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开始转换ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 图像对比度增强ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开始转换ToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem 图像修复ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开始转换ToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem 图像色彩增强ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开始转换ToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem 文档图片去底纹ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开始转换ToolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem 图像去噪ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开始转换ToolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem 图像去雾ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开始转换ToolStripMenuItem7;
     }
 }

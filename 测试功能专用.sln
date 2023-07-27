@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YH_ScanProject", "YH_ScanPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelAutoMAIL", "ExcelAutoMAIL\ExcelAutoMAIL.csproj", "{957B30BD-4B6C-43AC-AB3A-B75025A44371}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessHelp_api", "BusinessHelp_api\BusinessHelp_api.csproj", "{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|Any CPU = CD_ROM|Any CPU
@@ -190,6 +192,21 @@ Global
 		{957B30BD-4B6C-43AC-AB3A-B75025A44371}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
 		{957B30BD-4B6C-43AC-AB3A-B75025A44371}.SingleImage|Any CPU.Build.0 = Release|Any CPU
 		{957B30BD-4B6C-43AC-AB3A-B75025A44371}.SingleImage|x86.ActiveCfg = Release|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.CD_ROM|x86.ActiveCfg = Release|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.DVD-5|x86.ActiveCfg = Debug|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.Release|x86.ActiveCfg = Release|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{F341C82A-6BD8-461C-8AC7-932B0AD61B7A}.SingleImage|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

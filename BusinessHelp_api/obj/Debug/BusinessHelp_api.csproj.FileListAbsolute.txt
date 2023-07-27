@@ -1,0 +1,9 @@
+F:\git_version\YH_ExcelAuto\BusinessHelp_api\bin\Debug\BusinessHelp_api.dll
+F:\git_version\YH_ExcelAuto\BusinessHelp_api\bin\Debug\BusinessHelp_api.pdb
+F:\git_version\YH_ExcelAuto\BusinessHelp_api\bin\Debug\AipSdk.dll
+F:\git_version\YH_ExcelAuto\BusinessHelp_api\bin\Debug\Newtonsoft.Json.dll
+F:\git_version\YH_ExcelAuto\BusinessHelp_api\bin\Debug\RestSharp.dll
+F:\git_version\YH_ExcelAuto\BusinessHelp_api\bin\Debug\AipSdk.pdb
+F:\git_version\YH_ExcelAuto\BusinessHelp_api\obj\Debug\BusinessHelp_api.dll
+F:\git_version\YH_ExcelAuto\BusinessHelp_api\obj\Debug\BusinessHelp_api.pdb
+F:\git_version\YH_ExcelAuto\BusinessHelp_api\obj\Debug\BusinessHelp_api.csprojResolveAssemblyReference.cache

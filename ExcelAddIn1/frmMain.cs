@@ -16,6 +16,7 @@ using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Collections;
+ 
 
 
 namespace ExcelAddIn1
@@ -804,6 +805,77 @@ namespace ExcelAddIn1
             string filename = path + "\\pic " + DateTime.Now.ToString("yyyyMMdd-ss") + ".png";
 
             memoryImage.Save(filename, ImageFormat.Png);
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //int type_name = 1;
+                //clsAllnew_2 BusinessHelp = new clsAllnew_2();
+                //BusinessHelp.diaoyongfangfa(type_name);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "ex");
+                return;
+                throw;
+            }
+        }
+
+        private void 开始转换ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //int type_name = 2;
+            //clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            //BusinessHelp.diaoyongfangfa(type_name);
+
+        }
+
+        private void 开始转换ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            //int type_name = 3;
+            //clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            //BusinessHelp.diaoyongfangfa(type_name);
+        }
+
+        private void 开始转换ToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            //int type_name = 5;
+            //clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            //BusinessHelp.diaoyongfangfa(type_name);
+        }
+
+        private void 开始转换ToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            //int type_name = 6;
+            //clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            //BusinessHelp.diaoyongfangfa(type_name);
+        }
+
+        private void 开始转换ToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            //int type_name = 7;
+            //clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            //BusinessHelp.diaoyongfangfa(type_name);
+        }
+
+        private void 开始转换ToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            //int type_name = 8;
+            //clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            //BusinessHelp.diaoyongfangfa(type_name);
+        }
+
+        private void 开始转换ToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            //int type_name = 9;
+            //clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            //BusinessHelp.diaoyongfangfa(type_name);
+        }
+
+        private void 图像对比度增强ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

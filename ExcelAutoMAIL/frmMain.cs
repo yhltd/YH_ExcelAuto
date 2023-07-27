@@ -16,7 +16,11 @@ using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Collections;
-
+using System.Net;
+using RestSharp;
+using RestSharp.Contrib;
+using Newtonsoft.Json;
+using BusinessHelp_api;
 
 namespace ExcelAutoMAIL
 {
@@ -38,6 +42,11 @@ namespace ExcelAutoMAIL
         public string path;
         private List<string> Alist = new List<string>();
         public string send_tiaoshu;
+
+        public string path1 = AppDomain.CurrentDomain.BaseDirectory + "test\\9e6b1b7b-50fe-4369-b226-129e311ffe6c.jpg";
+
+
+
 
         public frmMain()
         {
@@ -778,7 +787,7 @@ namespace ExcelAutoMAIL
         {
             ScreenCapture BusinessHelp = new ScreenCapture();
             if (path.Length > 0)
-               //BusinessHelp.CaptureScreen();
+                //BusinessHelp.CaptureScreen();
 
                 GetScreen1();
             else
@@ -806,6 +815,76 @@ namespace ExcelAutoMAIL
 
             memoryImage.Save(filename, ImageFormat.Png);
         }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int type_name = 1;
+                clsAllnew_2 BusinessHelp = new clsAllnew_2();
+               BusinessHelp. diaoyongfangfa(type_name);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "ex");
+                return;
+                throw;
+            }
+        }
+
+    
+        private void 开始转换ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            int type_name = 2;
+            clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            BusinessHelp.diaoyongfangfa(type_name);
+
+      
+        }
+
+        private void 开始转换ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            int type_name = 3;
+            clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            BusinessHelp.diaoyongfangfa(type_name);
+        }
+
+        private void 开始转换ToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            int type_name = 5;
+            clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            BusinessHelp.diaoyongfangfa(type_name);
+        }
+
+        private void 开始转换ToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            int type_name = 6;
+            clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            BusinessHelp.diaoyongfangfa(type_name);
+        }
+
+        private void 开始转换ToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+
+            int type_name = 7;
+            clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            BusinessHelp.diaoyongfangfa(type_name);
+        }
+
+        private void 开始转换ToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            int type_name = 8;
+            clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            BusinessHelp.diaoyongfangfa(type_name);
+        }
+
+        private void 开始转换ToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            int type_name = 9;
+            clsAllnew_2 BusinessHelp = new clsAllnew_2();
+            BusinessHelp.diaoyongfangfa(type_name);
+        }
+     
 
     }
 }

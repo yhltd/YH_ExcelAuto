@@ -20,3 +20,14 @@ D:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.Properties.R
 D:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.csproj.GenerateResource.Cache
 D:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.exe
 D:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.pdb
+F:\git_version\YH_ExcelAuto\YH_ScanProject\bin\Debug\YH_ScanProject.exe.config
+F:\git_version\YH_ExcelAuto\YH_ScanProject\bin\Debug\YH_ScanProject.exe
+F:\git_version\YH_ExcelAuto\YH_ScanProject\bin\Debug\YH_ScanProject.pdb
+F:\git_version\YH_ExcelAuto\YH_ScanProject\bin\Debug\AipSdk.dll
+F:\git_version\YH_ExcelAuto\YH_ScanProject\bin\Debug\Newtonsoft.Json.dll
+F:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.csprojResolveAssemblyReference.cache
+F:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.frmmain.resources
+F:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.Properties.Resources.resources
+F:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.csproj.GenerateResource.Cache
+F:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.exe
+F:\git_version\YH_ExcelAuto\YH_ScanProject\obj\Debug\YH_ScanProject.pdb

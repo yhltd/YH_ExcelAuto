@@ -14,3 +14,8 @@ D:\git_version\YH_ExcelAuto\dblist\bin\Release\dblist.dll
 D:\git_version\YH_ExcelAuto\dblist\bin\Release\dblist.pdb
 D:\git_version\YH_ExcelAuto\dblist\obj\Release\dblist.dll
 D:\git_version\YH_ExcelAuto\dblist\obj\Release\dblist.pdb
+F:\git_version\YH_ExcelAuto\dblist\bin\Release\dblist.dll
+F:\git_version\YH_ExcelAuto\dblist\bin\Release\dblist.pdb
+F:\git_version\YH_ExcelAuto\dblist\obj\Release\dblist.csprojResolveAssemblyReference.cache
+F:\git_version\YH_ExcelAuto\dblist\obj\Release\dblist.dll
+F:\git_version\YH_ExcelAuto\dblist\obj\Release\dblist.pdb
